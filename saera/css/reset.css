@@ -30,7 +30,7 @@ form {
   padding: 0;
 }
 
-/* 폰트 초기화 */
+/* 폰트 초기화 */ 
 body,
 input,
 textarea,
@@ -79,13 +79,16 @@ button {
 }
 
 /* IR 효과 */
+/* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
 .ir_pm {
   display: block;
   overflow: hidden;
   font-size: 0;
   line-height: 0;
   text-indent: -9999px;
-} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
+} 
+
+/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때 */
 .ir_wa {
   display: block;
   overflow: hidden;
@@ -93,7 +96,9 @@ button {
   z-index: -1;
   width: 100%;
   height: 100%;
-} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때 */
+} 
+
+/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
 .ir_su {
   overflow: hidden;
   position: absolute;
@@ -101,4 +106,4 @@ button {
   height: 0;
   line-height: 0;
   text-indent: -9999px;
-} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+} 
