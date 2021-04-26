@@ -7,9 +7,6 @@
   <meta name="viewport"
     content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
   <title>새라여자고등학교</title>
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
   <!-- lightbox CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
   <!-- 웹폰트 연결 -->
@@ -17,6 +14,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap"
     rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -74,13 +74,67 @@
         <!-- 네비게이션 -->
         <div class="nav">
           <ul>
-            <li><a href="#">새라여고</a></li>
-            <li><a href="#">학교소식</a></li>
-            <li><a href="#">학교생활</a></li>
-            <li><a href="#">자료실</a></li>
-            <li><a href="#">행정정보</a></li>
-            <li><a href="#">학교평가</a></li>
-            <li><a href="#">입학안내</a></li>
+            <li>
+              <a href="#">새라여고</a>
+              <ul class="lnb">
+                <li><a href="#">학교소개</a></li>
+                <li><a href="#">학교현황</a></li>
+                <li><a href="#">교직원소개</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">학교소식</a>
+              <ul class="lnb">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">학교소식</a></li>
+                <li><a href="#">가정통신문</a></li>
+                <li><a href="#">오늘의 식단</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">학교생활</a>
+              <ul class="lnb">
+                <li><a href="#">새라게시판</a></li>
+                <li><a href="#">디지털도서관</a></li>
+                <li><a href="#">학부모게시판</a></li>
+                <li><a href="#">방과후학교</a></li>
+                <li><a href="#">동아리활동</a></li>
+                <li><a href="#">새라갤러리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">자료실</a>
+              <ul class="lnb">
+                <li><a href="#">진로진학정보</a></li>
+                <li><a href="#">학생자료실</a></li>
+                <li><a href="#">교직원자료실</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">행정정보</a>
+              <ul class="lnb">
+                <li><a href="#">행정정보공개</a></li>
+                <li><a href="#">예산집행현황</a></li>
+                <li><a href="#">수의계약현황</a></li>
+                <li><a href="#">발전기금현황</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">학교평가</a>
+              <ul class="lnb">
+                <li><a href="#">2020학년도</a></li>
+                <li><a href="#">2019학년도</a></li>
+                <li><a href="#">2018학년도</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">입학안내</a>
+              <ul class="lnb">
+                <li><a href="#">모집요강</a></li>
+                <li><a href="#">입학상담</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
         <!-- /네비게이션 -->
@@ -226,7 +280,7 @@
             <h3 class="cont_title">새라갤러리</h3>
             <div class="cont_contents">
               <!-- lightbox -->
-              <div class="lightbox">
+              <div class="s_gallery">
                 <a href="./image/gallery/01.png" data-lightbox="gallery"><img src="./image/gallery/01.png" alt="01"></a>
                 <a href="./image/gallery/02.png" data-lightbox="gallery"><img src="./image/gallery/02.png" alt="02"></a>
                 <a href="./image/gallery/03.png" data-lightbox="gallery"><img src="./image/gallery/03.png" alt="03"></a>
