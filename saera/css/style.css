@@ -168,7 +168,7 @@
   background-color: #fff;
   position: relative;
   z-index: 15;
-  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 30px 0 60px rgba(0, 0, 0, 0.5);
 }
 
 .m_submenu{
