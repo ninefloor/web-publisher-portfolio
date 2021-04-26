@@ -39,7 +39,7 @@ button,
 table {
   font-family: "Noto Sans KR", AppleSDGothicNeo-Regular, "Malgun Gothic",
     "맑은 고딕", dotum, "돋움", sans-serif;
-  color: #000;
+  color: #333;
   font-size: 13px;
   line-height: 1.5;
 }
@@ -82,6 +82,10 @@ button {
 a{
   text-decoration: none;
   color: inherit;
+}
+
+a:hover{
+  color: #666;
 }
 
 
