@@ -504,7 +504,8 @@
   align-content: space-around;
 }
 
-.banner>div{
+.banner>li{
+  display: block;
   position: relative;
   width: 14%;
   margin: 30px 1%;
@@ -514,20 +515,24 @@
   text-align: center;
 }
 
-.banner>div::after{
+
+.banner>li::after{
+  display: block;
   content: '';
   display: block;
   padding-bottom: 100%;
 }
 
-.banner>div>img{
+.banner>li>a>img{
+  display: block;
   position: absolute;
   top: 43%; left: 50%;
   width: 50%;
   transform: translate(-50%, -50%);
 }
 
-.banner>div>h5{
+.banner>li>a>h5{
+  display: block;
   width: 70%;
   position: absolute;
   top: 70%; left: 50%;
@@ -633,7 +638,8 @@
     width: 100%;
   }
 
-  .banner>div>h5{
+  .banner>li>a>h5{
+    display: block;
     font-size: calc(0.5vw + 12px);
   }
 }
@@ -670,7 +676,8 @@
     /* address 중앙배치로 변경 */
   }
 
-  .banner>div>h5{
+  .banner>li>a>h5{
+    display: block;
     font-size: calc(0.5vw + 9px);
   }
 
@@ -690,12 +697,14 @@
     width: 100%;
   }
 
-  .banner>div{
+  .banner>li>a{
+    display: block;
     width: 28%;
     /* 배너 크기 재조정 */
   }
 
-  .banner>div>h5{
+  .banner>li>a>h5{
+    display: block;
     font-size: calc(1vw + 12px);
     font-weight: bold;
     margin-top: 2%;
@@ -787,12 +796,14 @@
     /* 하단 정보 재배치 */
   }
 
-  .banner>div>h5{
+  .banner>li>a>h5{
+    display: block;
     font-size: calc(0.5vw + 12px);
     /* 배너 폰트 크기 조정 */
   }
 
-  .banner>div{
+  .banner>li>a{
+    display: block;
     margin: 10px 1%;
     /* 배너 상하 마진 조정 */
   }
@@ -808,7 +819,8 @@
 }
 
 @media (max-width: 400px){
-  .banner>div>h5{
+  .banner>li>a>h5{
+    display: block;
     font-size: calc(0.5vw + 9.5px);
     /* 배너 폰트 크기 조정 */
   }
@@ -860,7 +872,8 @@
 }
 
 @media (max-width: 320px){
-  .banner>div>h5{
+  .banner>li>a>h5{
+    display: block;
     font-size: 10px;
     /* 배너 폰트 크기 조정 */
   }
