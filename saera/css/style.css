@@ -75,6 +75,7 @@
   top: 50%; left: 5%;
   transform: translateY(-50%);
   display: none;
+  cursor: pointer;
 }
 
 /* 헤더 끝 */
@@ -164,7 +165,8 @@
 .m_nav{
   width: 70%;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #fff;
   position: relative;
   z-index: 15;
