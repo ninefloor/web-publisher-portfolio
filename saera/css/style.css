@@ -745,7 +745,7 @@ right: 5%;
     width: 100%;
   }
 
-  .banner>li>a{
+  .banner>li{
     display: block;
     width: 28%;
     /* 배너 크기 재조정 */
@@ -753,8 +753,9 @@ right: 5%;
 
   .banner>li>a>h5{
     display: block;
+    width: 80%;
     font-size: calc(1vw + 12px);
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 2%;
     color: #fff;
     /* 배너 글자크기 변경 */
@@ -850,8 +851,7 @@ right: 5%;
     /* 배너 폰트 크기 조정 */
   }
 
-  .banner>li>a{
-    display: block;
+  .banner>li{
     margin: 10px 1%;
     /* 배너 상하 마진 조정 */
   }
