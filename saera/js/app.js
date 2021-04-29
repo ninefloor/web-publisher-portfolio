@@ -14,7 +14,7 @@ $(document).ready(function(){
     infinite: true, // 무한 슬라이드
     fade: true, // 페이드 전환 방식
     speed: 300, // 전환 속도
-    arrows: false, // 화살표
+    arrows: false, // 화살표 숨김
     dots: false, // 인디케이터
     autoplay: true, // 자동 전환
     autoplaySpeed: 4000, // 자동전환 주기
@@ -23,9 +23,9 @@ $(document).ready(function(){
     respondTo: 'window',
     responsive:[ // 반응형 옵션
       {
-        breakpoint: 768, // 브레이크 포인트 768px
+        breakpoint: 768, // 브레이크 포인트 : 768px 이상
         settings:{
-          arrows: true // 화살표 숨김
+          arrows: true // 화살표 표시
         }
       }
     ]
