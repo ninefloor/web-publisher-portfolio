@@ -25,7 +25,8 @@ td,
 tr,
 textarea,
 button,
-form {
+form,
+figure {
   margin: 0;
   padding: 0;
 }

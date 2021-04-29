@@ -236,10 +236,56 @@
 .slide {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
-.slide>div>img{
+.slide img{
   width: 100%;
+}
+
+.slick-arrow{
+  width: 10%;
+  display: inline-block;
+  text-indent: -9999px;
+  position: absolute;
+  z-index: 9;
+  background: none;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev{
+left: 5%;
+}
+
+.slick-arrow.slick-prev::after{
+  content: '\f053';
+  font-family: 'FontAwesome';
+  font-size: 5vw;
+  color: #fff;
+  text-indent: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-next{
+right: 5%;
+}
+
+.slick-arrow.slick-next::after{
+  content: '\f054';
+  font-family: 'FontAwesome';
+  font-size: 5vw;
+  color: #fff;
+  text-indent: 0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* 슬라이드 끝 */

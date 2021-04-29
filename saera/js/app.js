@@ -8,6 +8,28 @@ $(document).ready(function(){
       m_nav.css({left: "-"+100+"%"});
     }
   })
+  // slick 사용
+  $('.slide').slick({
+    slide: 'div', // 슬라이드 될 요소
+    infinite: true, // 무한 슬라이드
+    fade: true, // 페이드 전환 방식
+    speed: 300, // 전환 속도
+    arrows: false, // 화살표
+    dots: false, // 인디케이터
+    autoplay: true, // 자동 전환
+    autoplaySpeed: 4000, // 자동전환 주기
+    pauseOnHover: false, // 호버 시 자동전환 정지
+    mobileFirst: true, // 모바일향
+    respondTo: 'window',
+    responsive:[ // 반응형 옵션
+      {
+        breakpoint: 768, // 브레이크 포인트 768px
+        settings:{
+          arrows: true // 화살표 숨김
+        }
+      }
+    ]
+  })
 })
 
 let gnb = $(".nav>ul>li");
