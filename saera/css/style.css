@@ -724,8 +724,8 @@ right: 5%;
 
 #aside{
   float: left;
-  width: 23%;
-  margin: 32px 1% 0;
+  width: 21%;
+  margin: 32px 2% 32px;
 }
 
 .aside>.side_header{
@@ -773,7 +773,36 @@ right: 5%;
 #sub_contents{
   float: left;
   width: 73%;
-  margin: 32px 1% 0;
+  margin: 32px 1% 32px;
+}
+
+.sub_contents>.sub_cont_h{
+  width: 100%;
+  padding: 15px 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 15px;
+  color: #540021;
+  border-bottom: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  margin-bottom: 44px;
+}
+
+.sub_contents>.sub_cont{
+  width: 100%;
+  padding: 20px;
+}
+
+.sub_cont>article{
+  width: 100%;
+  margin-bottom: 96px;
+}
+
+.sub_cont>article>.title{
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
 }
 
 /* 서브 컨텐츠 끝 */
@@ -956,6 +985,19 @@ right: 5%;
 
   #cont_banner{
     display: none;
+    /* 컨텐츠 배너 삭제 */
+  }
+
+  #aside{
+    display: none;
+    /* 사이드바 삭제 */
+  }
+
+  #sub_contents{
+    width: 98%;
+    float: none;
+    margin-top: 80px;
+    /* 컨텐츠 영역 최대화 및 헤더 가림 방지 마진 추가 */
   }
 }
 
