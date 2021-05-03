@@ -800,10 +800,37 @@ right: 5%;
 }
 
 .sub_cont>article>.title{
+  width: 100%;
   font-size: 20px;
   font-weight: bold;
   color: #333;
+  margin-bottom: 16px;
 }
+
+.cont1>.text{
+  width: 70%;
+}
+
+.cont1>.text>p{
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: left;
+  color: #333333;
+  text-indent: 10px;
+  margin-bottom: 16px;
+}
+
+.cont1>.text>p:first-child{
+  width: 100%;
+  font-family: 'Noto Serif KR';
+  font-size: 40px;
+  font-weight: bold;
+  text-indent: 0;
+  
+}
+
 
 /* 서브 컨텐츠 끝 */
 
@@ -822,14 +849,21 @@ right: 5%;
   .cont_banner>figure>figcaption{
     position: absolute;
     top: 35%; left: 20%;
+    /* 컨텐츠 배너 텍스트 위치 반응형 변경 */
   }
 
   .cont_banner>figure>figcaption>p:first-child{
-    font-family: 'Noto Serif KR', serif;
     font-size: 1.5vw;
+    /* 컨텐츠 배너 텍스트 크기 반응형 변경 */
   }
   .cont_banner>figure>figcaption>p:last-child{
     font-size: 3vw;
+    /* 컨텐츠 배너 텍스트 크기 반응형 변경 */
+  }
+
+  .cont1>.text>p:first-child{
+    font-size: 3.4vw;
+    /* 첫 아티클 텍스트 크기 반응형 변경 */
   }
 }
 
