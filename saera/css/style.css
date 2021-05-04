@@ -1055,6 +1055,53 @@
   vertical-align: middle;
 }
 
+.teacher_state {
+  width: 100%;
+}
+.teacher_state > .tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  margin: 5% auto;
+}
+.teacher_state > .tg td {
+  border-color: #333;
+  border-style: solid;
+  border-width: 0.5px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.teacher_state > .tg th {
+  border-color: #333;
+  border-style: solid;
+  border-width: 0.5px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.teacher_state > .tg .tg-wa1i {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.teacher_state > .tg .tg-vzrx {
+  background-color: #610027;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+.teacher_state > .tg .tg-nrix {
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* 서브 컨텐츠 끝 */
 
 /* 미디어 쿼리 시작 */
