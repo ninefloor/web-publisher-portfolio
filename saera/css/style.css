@@ -1212,6 +1212,12 @@
     font-size: 3vw;
     /* 폰트 크기 반응형 변경 */
   }
+
+  .sub_contents > .sub_cont_h{
+    width: 95%;
+    margin: 10px auto 0; 
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 520px) {
