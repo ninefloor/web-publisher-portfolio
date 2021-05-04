@@ -959,6 +959,7 @@
   text-align: left;
   color: #333333;
   margin: 10px 0;
+  word-break: keep-all;
 }
 
 .sub_cont ul.text>li::before{
@@ -1280,6 +1281,9 @@
     float: none;
   }
 
+  .sub_cont ul.text>li{
+    font-size: 4vw;
+  }
 }
 
 @media (max-width: 400px) {
