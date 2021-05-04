@@ -35,10 +35,10 @@
           <li>
             <a href="#">새라여고</a>
             <ul class="m_lnb">
-              <li><a href="#">학교소개</a></li>
-              <li><a href="#">학교현황</a></li>
-              <li><a href="#">교직원소개</a></li>
-              <li><a href="#">오시는길</a></li>
+              <li><a href="./introduce.html">학교소개</a></li>
+              <li><a href="./state.html">학교현황</a></li>
+              <li><a href="./teacher.html">교직원소개</a></li>
+              <li><a href="./road.html">오시는길</a></li>
             </ul>
           </li>
           <li>
@@ -108,14 +108,14 @@
           <!-- /햄버거 버튼 -->
           <!-- 로고 -->
           <div class="logo">
-            <a href="#"><img src="./image/logo_resize.png" alt="로고"></a>
+            <a href="./index.html"><img src="./image/logo_resize.png" alt="로고"></a>
           </div>
           <!-- /로고 -->
           <!-- 서브메뉴 -->
           <div class="submenu">
             <ul>
               <li><a href="#">사이트맵</a></li>
-              <li><a href="#">홈</a></li>
+              <li><a href="./index.html">홈</a></li>
               <li><a href="#">로그인</a></li>
               <li><a href="#">회원가입</a></li>
             </ul>
@@ -135,10 +135,10 @@
             <li>
               <a href="#">새라여고</a>
               <ul class="lnb">
-                <li><a href="#">학교소개</a></li>
-                <li><a href="#">학교현황</a></li>
-                <li><a href="#">교직원소개</a></li>
-                <li><a href="#">오시는길</a></li>
+                <li><a href="./introduce.html">학교소개</a></li>
+                <li><a href="./state.html">학교현황</a></li>
+                <li><a href="./teacher.html">교직원소개</a></li>
+                <li><a href="./road.html">오시는길</a></li>
               </ul>
             </li>
             <li>
@@ -473,6 +473,39 @@
   <!-- slick JS -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- 사용자 JS -->
+  <script>
+    // slick 사용
+    $('.slide').slick({
+      slide: 'div', // 슬라이드 될 요소
+      infinite: true, // 무한 슬라이드
+      fade: true, // 페이드 전환 방식
+      speed: 300, // 전환 속도
+      arrows: false, // 화살표 숨김
+      dots: false, // 인디케이터
+      autoplay: true, // 자동 전환
+      autoplaySpeed: 4000, // 자동전환 주기
+      pauseOnHover: false, // 호버 시 자동전환 정지
+      mobileFirst: true, // 모바일향
+      respondTo: 'window',
+      responsive: [ // 반응형 옵션
+        {
+          breakpoint: 768, // 브레이크 포인트 : 768px 이상
+          settings: {
+            arrows: true // 화살표 표시
+          }
+        }
+      ]
+    })
+    // lightbox 설정
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: false,
+      disableScrolling: true,
+      fitImagesInViewport: true,
+      showImageNumberLabel: false,
+      alwaysShowNavOnTouchDevices: true
+    });
+  </script>
   <script src="./js/app.js"></script>
   <!-- JS 끝 -->
 </body>
