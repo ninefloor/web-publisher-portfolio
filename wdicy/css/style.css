@@ -25,7 +25,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("../images/wdicy_typo2.png");
+  background-image: url("../images/wdicy_typo.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@
   display: none;
 }
 
-#wrap .cont1 {
+#wrap .sec1 {
   width: 100%;
   height: 100vh;
   font-size: 20px;
@@ -46,4 +46,59 @@
   font-weight: 700;
   font-style: italic;
   color: #D99F7E;
+}
+
+#wrap .sec1 .contain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#wrap .sec1 .contain .sub_title {
+  position: absolute;
+  top: 3.4%;
+  left: 2.1%;
+}
+
+#wrap .sec1 .contain .sub_title span {
+  display: block;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: normal;
+  font-size: 53px;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: -3.92px;
+  text-align-last: left;
+  color: #F2EBDC;
+  text-transform: uppercase;
+}
+
+#wrap .sec1 .contain h4.main_title {
+  position: absolute;
+  top: 31.7%;
+  left: 2.1%;
+}
+
+#wrap .sec1 .contain h4.main_title div span {
+  display: block;
+  height: 180px;
+  font-family: "Bodoni Moda", serif;
+  font-weight: 800;
+  font-size: 155px;
+  font-style: normal;
+  text-align: center;
+  color: transparent;
+  letter-spacing: -9.92px;
+  -webkit-text-stroke: 1px #F2EBDC;
+  text-transform: uppercase;
+  margin-right: 20px;
+  padding-right: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  float: left;
+}
+
+#wrap .sec1 .contain h4.main_title div span:hover {
+  -webkit-text-stroke: 0;
+  color: #F2EBDC;
 }

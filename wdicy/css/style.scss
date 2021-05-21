@@ -44,7 +44,7 @@ $green: #B1BF9B;
     height: 100vh;
     position: fixed;
     top: 0; left: 0;
-    background-image: url("../images/wdicy_typo2.png");
+    background-image: url("../images/wdicy_typo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -52,12 +52,55 @@ $green: #B1BF9B;
 }
 #wrap{
   display: none;
-  .cont1{
+  .sec1{
     width: 100%;
     height: 100vh;
     font-size: 20px;
     color: #fff;
     background-color: rgba(0,0,0,0.7);
     @include secTitle(72px, $brown);
+    .contain{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .sub_title{
+        position: absolute;
+        top: 3.4%; left: 2.1%;
+        span{
+          display: block;
+          @include font($tenor, normal, 53px, normal);
+          line-height: 1.13;
+          letter-spacing: -3.92px;
+          text-align-last: left;
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+      h4.main_title{
+        position: absolute;
+        top: 31.7%; left: 2.1%;
+        div{
+          span{
+            display: block;
+            height: 180px;
+            @include font($bodoni, 800, 155px, normal);
+            text-align: center;
+            color: transparent;
+            letter-spacing: -9.92px;
+            -webkit-text-stroke: 1px $white;
+            text-transform: uppercase;
+            margin-right: 20px;
+            padding-right: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            float: left;
+            &:hover{
+              -webkit-text-stroke: 0;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
   }
 }
