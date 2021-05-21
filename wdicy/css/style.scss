@@ -55,10 +55,7 @@ $green: #B1BF9B;
   .sec1{
     width: 100%;
     height: 100vh;
-    font-size: 20px;
-    color: #fff;
     background-color: rgba(0,0,0,0.7);
-    @include secTitle(72px, $brown);
     .contain{
       width: 100%;
       height: 100%;
@@ -78,7 +75,8 @@ $green: #B1BF9B;
       }
       h4.main_title{
         position: absolute;
-        top: 31.7%; left: 2.1%;
+        top: 50%; left: 2.1%;
+        transform: translateY(-50%);
         div{
           span{
             display: block;
@@ -100,6 +98,12 @@ $green: #B1BF9B;
             }
           }
         }
+      }
+      p.release{
+        @include font($bodoni, bold, 40px, italic);
+        color: $white;
+        position: absolute;
+        bottom: 2.6%; right: 2.1%;
       }
     }
   }

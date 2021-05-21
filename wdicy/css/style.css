@@ -38,14 +38,7 @@
 #wrap .sec1 {
   width: 100%;
   height: 100vh;
-  font-size: 20px;
-  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
-  font-family: "Bodoni Moda", serif;
-  font-size: 72px;
-  font-weight: 700;
-  font-style: italic;
-  color: #D99F7E;
 }
 
 #wrap .sec1 .contain {
@@ -75,8 +68,10 @@
 
 #wrap .sec1 .contain h4.main_title {
   position: absolute;
-  top: 31.7%;
+  top: 50%;
   left: 2.1%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #wrap .sec1 .contain h4.main_title div span {
@@ -101,4 +96,15 @@
 #wrap .sec1 .contain h4.main_title div span:hover {
   -webkit-text-stroke: 0;
   color: #F2EBDC;
+}
+
+#wrap .sec1 .contain p.release {
+  font-family: "Bodoni Moda", serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-style: italic;
+  color: #F2EBDC;
+  position: absolute;
+  bottom: 2.6%;
+  right: 2.1%;
 }
