@@ -1,0 +1,63 @@
+// 변수 설정 - 폰트 이름
+$bodoni: 'Bodoni Moda', serif;
+$tenor: 'Tenor Sans', sans-serif;
+$spoqa:'Spoqa Han Sans Neo', sans-serif;
+
+// 변수 설정 - 컬러
+$white: #F2EBDC;
+$black: #403636;
+$brown: #D99F7E;
+$green: #B1BF9B;
+
+// 믹스인 설정
+@mixin secTitle($size, $color) {
+  font-family: $bodoni;
+  font-size: $size;
+  font-weight: 700;
+  font-style: italic;
+  color: $color;
+}
+
+@mixin font($family, $weight, $size, $style){
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size;
+  font-style: $style;
+}
+
+.videoback{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+  overflow: hidden;
+  display: flex;
+  video{
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.title{
+  cursor: pointer;
+  .typo{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-image: url("../images/wdicy_typo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+#wrap{
+  display: none;
+  .cont1{
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    @include secTitle(72px, $brown);
+  }
+}
