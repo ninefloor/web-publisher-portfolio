@@ -18,6 +18,14 @@ $green: #B1BF9B;
   color: $color;
 }
 
+@mixin menuText($size, $color){
+  font-family: $bodoni;
+  font-size: $size;
+  font-weight: bold;
+  font-style: italic;
+  color: $color;
+}
+
 @mixin font($family, $weight, $size, $style){
   font-family: $family;
   font-weight: $weight;
