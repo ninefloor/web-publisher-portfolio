@@ -22,6 +22,9 @@ function menuBtn(){
 }
 
 const appHeight = () => {
-  document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+  let agent = navigator.userAgent.toLowerCase();
+  if(agent.indexOf('safari')>-1){
+    document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+  }
 };
 window.addEventListener('resize', appHeight);
