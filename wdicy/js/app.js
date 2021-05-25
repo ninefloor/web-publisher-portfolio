@@ -25,6 +25,8 @@ const appHeight = () => {
   let agent = navigator.userAgent.toLowerCase();
   if(agent.indexOf('safari')>-1){
     document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+  } else{
+    document.documentElement.style.setProperty('--app-height', `100vh`)
   }
 };
 window.addEventListener('resize', appHeight);
