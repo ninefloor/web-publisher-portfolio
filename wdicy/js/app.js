@@ -14,5 +14,6 @@ function menuBtn(){
   $(".menu_btn").click(function(e){
     e.preventDefault();
     $(this).toggleClass("active");
+    $("#nav").fadeToggle(400);
   })
 }
