@@ -1,13 +1,13 @@
 // 변수 설정 - 폰트 이름
-$bodoni: 'Bodoni Moda', serif;
-$tenor: 'Tenor Sans', sans-serif;
-$spoqa:'Spoqa Han Sans Neo', sans-serif;
+$bodoni: "Bodoni Moda", serif;
+$tenor: "Tenor Sans", sans-serif;
+$spoqa: "Spoqa Han Sans Neo", sans-serif;
 
 // 변수 설정 - 컬러
-$white: #F2EBDC;
+$white: #f2ebdc;
 $black: #403636;
-$brown: #D99F7E;
-$green: #B1BF9B;
+$brown: #d99f7e;
+$green: #b1bf9b;
 
 // 믹스인 설정
 @mixin secTitle($size, $color) {
@@ -18,7 +18,7 @@ $green: #B1BF9B;
   color: $color;
 }
 
-@mixin menuText($size, $color){
+@mixin menuText($size, $color) {
   font-family: $bodoni;
   font-size: $size;
   font-weight: bold;
@@ -26,50 +26,57 @@ $green: #B1BF9B;
   color: $color;
 }
 
-@mixin font($family, $weight, $size, $style){
+@mixin font($family, $weight, $size, $style) {
   font-family: $family;
   font-weight: $weight;
   font-size: $size;
   font-style: $style;
 }
 
-.videoback{
+.videoback {
   width: 100vw;
   height: 100vh;
+  height: var(--app-height, 100vh);
   position: fixed;
   z-index: -10;
   overflow: hidden;
   display: flex;
-  video{
+  video {
     object-fit: cover;
     width: 100%;
   }
 }
-.title{
+.title {
   cursor: pointer;
-  .typo{
+  .typo {
     width: 100%;
     height: 100vh;
+    height: var(--app-height, 100vh);
+    height: -webkit-fill-available;
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     background-image: url("../images/wdicy_typo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
 }
-#wrap{
+#wrap {
   display: none;
   position: relative;
-  #nav{
+  #nav {
     display: none;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 1;
     width: 100%;
     height: 100vh;
+    height: var(--app-height, 100vh);
+
     background-color: rgba($brown, 0.9);
-    .menu{
+    .menu {
       width: 100%;
       height: 100%;
       padding: 10vh 2.1% 5vh 0;
@@ -78,17 +85,17 @@ $green: #B1BF9B;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      li{
+      li {
         width: 92%;
         text-align: right;
         position: relative;
-        a{
+        a {
           @include menuText(71px, $black);
           letter-spacing: -4.54px;
           transition: color 0.3s ease;
         }
-        &::after{
-          content: '';
+        &::after {
+          content: "";
           display: block;
           position: absolute;
           width: 100%;
@@ -96,60 +103,64 @@ $green: #B1BF9B;
           background-color: rgba($white, 0);
           transition: all 0.3s ease;
         }
-        &:hover{
-          a{
+        &:hover {
+          a {
             color: $white;
           }
-          &::after{
+          &::after {
             background-color: rgba($white, 1);
           }
         }
       }
     }
   }
-  .menu_btn{
+  .menu_btn {
     display: block;
     position: fixed;
-    top: 4.7%; right: 2.1%;
+    top: 4.7%;
+    right: 2.1%;
     width: 60px;
     z-index: 10;
-    span{
+    span {
       display: block;
       width: 100%;
       height: 4px;
       background-color: $white;
       margin-bottom: 11px;
-      transition: all .4s;
-      &:last-child{
+      transition: all 0.4s;
+      &:last-child {
         margin: 0;
       }
     }
-    &.active{
-      span{
-        &:nth-child(1){
+    &.active {
+      span {
+        &:nth-child(1) {
           transform: translateY(15px) rotate(-45deg);
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           opacity: 0;
         }
-        &:nth-child(3){
+        &:nth-child(3) {
           transform: translateY(-15px) rotate(45deg);
         }
       }
     }
   }
-  .sec1{
+  .sec1 {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0,0,0,0.7);
-    .contain{
+    height: var(--app-height, 100vh);
+
+    background-color: rgba(0, 0, 0, 0.7);
+    .contain {
       width: 100%;
       height: 100%;
       position: relative;
-      .sub_title{
+      .sub_title {
         position: absolute;
-        top: 3.4%; left: 2.1%;
-        span{
+        top: 3.4%;
+        left: 2.1%;
+        span {
           display: block;
           @include font($tenor, normal, 53px, normal);
           line-height: 1.13;
@@ -159,12 +170,13 @@ $green: #B1BF9B;
           text-transform: uppercase;
         }
       }
-      h4.main_title{
+      h4.main_title {
         position: absolute;
-        top: 50%; left: 2.1%;
+        top: 50%;
+        left: 2.1%;
         transform: translateY(-50%);
-        div{
-          span{
+        div {
+          span {
             display: block;
             height: 180px;
             @include font($bodoni, 800, 155px, normal);
@@ -178,18 +190,19 @@ $green: #B1BF9B;
             cursor: pointer;
             overflow: hidden;
             float: left;
-            &:hover{
+            &:hover {
               -webkit-text-stroke: 0;
               color: $white;
             }
           }
         }
       }
-      p.release{
+      p.release {
         @include font($bodoni, bold, 40px, italic);
         color: $white;
         position: absolute;
-        bottom: 2.6%; right: 2.1%;
+        bottom: 2.6%;
+        right: 2.1%;
       }
     }
   }

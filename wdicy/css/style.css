@@ -1,6 +1,7 @@
 .videoback {
   width: 100vw;
   height: 100vh;
+  height: var(--app-height, 100vh);
   position: fixed;
   z-index: -10;
   overflow: hidden;
@@ -22,6 +23,8 @@
 .title .typo {
   width: 100%;
   height: 100vh;
+  height: var(--app-height, 100vh);
+  height: -webkit-fill-available;
   position: fixed;
   top: 0;
   left: 0;
@@ -44,6 +47,7 @@
   z-index: 1;
   width: 100%;
   height: 100vh;
+  height: var(--app-height, 100vh);
   background-color: rgba(217, 159, 126, 0.9);
 }
 
@@ -85,7 +89,7 @@
 }
 
 #wrap #nav .menu li::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -96,7 +100,7 @@
 }
 
 #wrap #nav .menu li:hover a {
-  color: #F2EBDC;
+  color: #f2ebdc;
 }
 
 #wrap #nav .menu li:hover::after {
@@ -116,10 +120,10 @@
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #F2EBDC;
+  background-color: #f2ebdc;
   margin-bottom: 11px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 #wrap .menu_btn span:last-child {
@@ -143,6 +147,7 @@
 #wrap .sec1 {
   width: 100%;
   height: 100vh;
+  height: var(--app-height, 100vh);
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -167,7 +172,7 @@
   line-height: 1.13;
   letter-spacing: -3.92px;
   text-align-last: left;
-  color: #F2EBDC;
+  color: #f2ebdc;
   text-transform: uppercase;
 }
 
@@ -189,7 +194,7 @@
   text-align: center;
   color: transparent;
   letter-spacing: -9.92px;
-  -webkit-text-stroke: 1px #F2EBDC;
+  -webkit-text-stroke: 1px #f2ebdc;
   text-transform: uppercase;
   margin-right: 20px;
   padding-right: 10px;
@@ -200,7 +205,7 @@
 
 #wrap .sec1 .contain h4.main_title div span:hover {
   -webkit-text-stroke: 0;
-  color: #F2EBDC;
+  color: #f2ebdc;
 }
 
 #wrap .sec1 .contain p.release {
@@ -208,7 +213,7 @@
   font-weight: bold;
   font-size: 40px;
   font-style: italic;
-  color: #F2EBDC;
+  color: #f2ebdc;
   position: absolute;
   bottom: 2.6%;
   right: 2.1%;
