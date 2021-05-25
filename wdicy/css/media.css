@@ -1,0 +1,12 @@
+@media (max-width: 1024px) {
+  #wrap .sec1 .contain .sub_title span {
+    font-size: 6vw;
+  }
+  #wrap .sec1 .contain h4.main_title div span {
+    height: 18vw;
+    font-size: 15vw;
+  }
+  #wrap .sec1 .contain p.release {
+    font-size: 5vw;
+  }
+}
