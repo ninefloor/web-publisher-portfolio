@@ -52,7 +52,6 @@ $green: #b1bf9b;
     width: 100%;
     height: 100vh;
     height: var(--app-height, 100vh);
-    height: -webkit-fill-available;
     position: fixed;
     top: 0;
     left: 0;
