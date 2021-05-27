@@ -1,37 +1,4 @@
-// 변수 설정 - 폰트 이름
-$bodoni: "Bodoni Moda", serif;
-$tenor: "Tenor Sans", sans-serif;
-$spoqa: "Spoqa Han Sans Neo", sans-serif;
-
-// 변수 설정 - 컬러
-$white: #f2ebdc;
-$black: #403636;
-$brown: #d99f7e;
-$green: #b1bf9b;
-
-// 믹스인 설정
-@mixin secTitle($size, $color) {
-  font-family: $bodoni;
-  font-size: $size;
-  font-weight: 700;
-  font-style: italic;
-  color: $color;
-}
-
-@mixin menuText($size, $color) {
-  font-family: $bodoni;
-  font-size: $size;
-  font-weight: bold;
-  font-style: italic;
-  color: $color;
-}
-
-@mixin font($family, $weight, $size, $style) {
-  font-family: $family;
-  font-weight: $weight;
-  font-size: $size;
-  font-style: $style;
-}
+@import "reset.scss";
 
 .videoback {
   width: 100vw;
@@ -61,12 +28,21 @@ $green: #b1bf9b;
     background-position: center;
   }
 }
+
+.contain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
 #wrap {
   display: none;
   position: relative;
   #nav {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -74,7 +50,7 @@ $green: #b1bf9b;
     height: 100vh;
     height: var(--app-height, 100vh);
 
-    background-color: rgba($brown, 0.9);
+    background-color: rgba($brown, 0.95);
     .menu {
       width: 100%;
       height: 100%;
@@ -149,59 +125,105 @@ $green: #b1bf9b;
     width: 100%;
     height: 100vh;
     height: var(--app-height, 100vh);
-
-    background-color: rgba(0, 0, 0, 0.7);
-    .contain {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      .sub_title {
-        position: absolute;
-        top: 3.4%;
-        left: 2.1%;
+    background-color: rgba($black, 0.7);
+    .sub_title {
+      position: absolute;
+      top: 3.4%;
+      left: 2.1%;
+      span {
+        display: block;
+        @include font($tenor, normal, 53px, normal);
+        line-height: 1.13;
+        letter-spacing: -3.92px;
+        text-align-last: left;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+    h4.main_title {
+      position: absolute;
+      top: 50%;
+      left: 2.1%;
+      transform: translateY(-50%);
+      div {
         span {
           display: block;
-          @include font($tenor, normal, 53px, normal);
-          line-height: 1.13;
-          letter-spacing: -3.92px;
-          text-align-last: left;
-          color: $white;
+          height: 180px;
+          @include font($bodoni, 800, 155px, normal);
+          text-align: center;
+          color: transparent;
+          letter-spacing: -9.92px;
+          -webkit-text-stroke: 1px $white;
           text-transform: uppercase;
-        }
-      }
-      h4.main_title {
-        position: absolute;
-        top: 50%;
-        left: 2.1%;
-        transform: translateY(-50%);
-        div {
-          span {
-            display: block;
-            height: 180px;
-            @include font($bodoni, 800, 155px, normal);
-            text-align: center;
-            color: transparent;
-            letter-spacing: -9.92px;
-            -webkit-text-stroke: 1px $white;
-            text-transform: uppercase;
-            margin-right: 20px;
-            padding-right: 10px;
-            cursor: pointer;
-            overflow: hidden;
-            float: left;
-            &:hover {
-              -webkit-text-stroke: 0;
-              color: $white;
-            }
+          margin-right: 20px;
+          padding-right: 10px;
+          cursor: pointer;
+          overflow: hidden;
+          float: left;
+          &:hover {
+            -webkit-text-stroke: 0;
+            color: $white;
           }
         }
       }
-      p.release {
-        @include font($bodoni, bold, 40px, italic);
-        color: $white;
-        position: absolute;
-        bottom: 2.6%;
-        right: 2.1%;
+    }
+    p.release {
+      @include font($bodoni, bold, 40px, italic);
+      color: $white;
+      position: absolute;
+      bottom: 2.6%;
+      right: 2.1%;
+    }
+  }
+  .sec2{
+    width: 100%;
+    height: 100vh;
+    background: rgba($black, 0.7);
+    .contain{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      figure{
+        width: 35%;
+        margin-right: 5.5%;
+        img{
+          width: 100%;
+          max-width: 672px;
+        }
+      }
+      article{
+        text-align: right;
+        width: 47%;
+        h5{
+          @include secTitle(71px, $brown);
+          margin-bottom: 60px;
+        }
+        h6{
+          @include font($spoqa, bold, 24px, normal);
+          color: $white;
+          margin-bottom: 20px;
+        }
+        p{
+          @include font($spoqa, normal, 18px, normal);
+          text-indent: 10px;
+          color: $white;
+          text-align: justify;
+          margin-bottom: 18px;
+          &:last-of-type{
+            margin-bottom: 80px;
+          }
+        }
+        button{
+          @include font($spoqa, bold, 22px, normal);
+          color: $black;
+          letter-spacing: -1px;
+          width: 200px;
+          height: 50px;
+          background-color: $white;
+          border-radius: 70px;
+          text-indent: 20px;
+        }
       }
     }
   }
