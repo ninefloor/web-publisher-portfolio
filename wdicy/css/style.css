@@ -329,7 +329,7 @@ a {
   font-weight: 700;
   font-style: italic;
   color: #d99f7e;
-  margin-bottom: 60px;
+  margin-bottom: 4%;
 }
 
 #wrap .sec2 .contain article h6 {
@@ -338,7 +338,7 @@ a {
   font-size: 24px;
   font-style: normal;
   color: #f2ebdc;
-  margin-bottom: 20px;
+  margin-bottom: 3%;
 }
 
 #wrap .sec2 .contain article p {
@@ -349,11 +349,12 @@ a {
   text-indent: 10px;
   color: #f2ebdc;
   text-align: justify;
-  margin-bottom: 18px;
+  letter-spacing: -1px;
+  margin-bottom: 3%;
 }
 
 #wrap .sec2 .contain article p:last-of-type {
-  margin-bottom: 80px;
+  margin-bottom: 7%;
 }
 
 #wrap .sec2 .contain article button {

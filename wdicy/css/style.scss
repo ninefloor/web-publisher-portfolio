@@ -197,21 +197,22 @@
         width: 47%;
         h5{
           @include secTitle(71px, $brown);
-          margin-bottom: 60px;
+          margin-bottom: 4%;
         }
         h6{
           @include font($spoqa, bold, 24px, normal);
           color: $white;
-          margin-bottom: 20px;
+          margin-bottom: 3%;
         }
         p{
           @include font($spoqa, normal, 18px, normal);
           text-indent: 10px;
           color: $white;
           text-align: justify;
-          margin-bottom: 18px;
+          letter-spacing: -1px;
+          margin-bottom: 3%;
           &:last-of-type{
-            margin-bottom: 80px;
+            margin-bottom: 7%;
           }
         }
         button{
