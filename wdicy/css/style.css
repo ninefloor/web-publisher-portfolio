@@ -505,6 +505,11 @@ a {
   letter-spacing: -0.5px;
 }
 
+#wrap .sec3 .contain article ul.profile li span sub {
+  vertical-align: baseline;
+  font-size: smaller;
+}
+
 #wrap .sec3 .contain article button {
   -ms-flex-item-align: end;
       align-self: flex-end;

@@ -89,20 +89,11 @@
     margin-bottom: 40px;
   }
   #wrap .sec3 .contain article ul.profile li span:first-child {
-    display: inline-block;
     width: 25%;
-    font-size: 2.1vw;
-    text-align: right;
-    line-height: 1.58;
-    letter-spacing: -0.5px;
-    margin-right: 1%;
-    text-transform: uppercase;
+    font-size: 2.8vw;
   }
   #wrap .sec3 .contain article ul.profile li span:last-child {
-    display: inline-block;
-    font-size: 2.1vw;
-    line-height: 1.58;
-    letter-spacing: -0.5px;
+    font-size: 2.8vw;
   }
 }
 
@@ -165,20 +156,11 @@
     margin-bottom: 20px;
   }
   #wrap .sec3 .contain article ul.profile li span:first-child {
-    display: inline-block;
     width: 25%;
-    font-size: 2.3vw;
-    text-align: right;
-    line-height: 1.58;
-    letter-spacing: -0.5px;
-    margin-right: 1%;
-    text-transform: uppercase;
+    font-size: 2.5vw;
   }
   #wrap .sec3 .contain article ul.profile li span:last-child {
-    display: inline-block;
-    font-size: 2.3vw;
-    line-height: 1.58;
-    letter-spacing: -0.5px;
+    font-size: 2.5vw;
   }
 }
 
@@ -234,26 +216,15 @@
   #wrap .sec3 .contain article {
     width: 75%;
   }
-  #wrap .sec3 .contain article h5 {
-    padding: 20px 0;
-  }
-  #wrap .sec3 .contain article ul.profile {
-    margin-bottom: 20px;
-  }
   #wrap .sec3 .contain article ul.profile li span:first-child {
-    display: inline-block;
-    width: 25%;
-    font-size: 12px;
-    text-align: right;
-    line-height: 1.58;
-    letter-spacing: -0.5px;
-    margin-right: 1%;
-    text-transform: uppercase;
+    display: block;
+    width: auto;
+    text-align: left;
+    font-size: 14px;
   }
   #wrap .sec3 .contain article ul.profile li span:last-child {
-    display: inline-block;
+    display: block;
     font-size: 12px;
-    line-height: 1.58;
-    letter-spacing: -0.5px;
+    margin-left: 2px;
   }
 }
