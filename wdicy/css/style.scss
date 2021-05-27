@@ -49,7 +49,6 @@
     width: 100%;
     height: 100vh;
     height: var(--app-height, 100vh);
-
     background-color: rgba($brown, 0.95);
     .menu {
       width: 100%;
@@ -101,6 +100,7 @@
       width: 100%;
       height: 4px;
       background-color: $white;
+      box-shadow: 0 0 8px rgba($black, 0.5);
       margin-bottom: 11px;
       transition: all 0.4s;
       &:last-child {
@@ -109,6 +109,7 @@
     }
     &.active {
       span {
+        box-shadow: none;
         &:nth-child(1) {
           transform: translateY(15px) rotate(-45deg);
         }
@@ -195,12 +196,12 @@
       article{
         text-align: right;
         width: 47%;
-        h5{
+        h4{
           @include secTitle(71px, $brown);
           margin-bottom: 4%;
         }
-        h6{
-          @include font($spoqa, bold, 24px, normal);
+        h5{
+          @include font($spoqa, bold, 22px, normal);
           color: $white;
           margin-bottom: 3%;
         }
@@ -224,6 +225,97 @@
           background-color: $white;
           border-radius: 70px;
           text-indent: 20px;
+        }
+      }
+    }
+  }
+  .sec3{
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    .contain{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: stretch;
+      h4{
+        width: 87.5%;
+        @include secTitle(71px, $green);
+      }
+      figure{
+        width: 41%;
+        margin-right: 4%;
+        div{
+          width: 100%;
+          height: 100%;
+          background-image: url(../images/profile_daisy.png);
+          background-size: 60.75%;
+          background-repeat: no-repeat;
+          background-position: 106% -21%;
+        }
+        img{
+          width: 73%;
+          margin-top: 11%;
+        }
+      }
+      article{
+        width: 42.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        box-sizing: border-box;
+        h5{
+          padding-top: 11%;
+          span{
+            &:first-child{
+              @include font($tenor, normal, 70px, normal);
+              letter-spacing: -5px;
+              text-transform: uppercase;
+              margin-right: 7px;
+            }
+            &:last-child{
+              @include font($spoqa, normal, 36px, normal);
+              letter-spacing: -2.66px;
+            }
+          }
+        }
+        ul.profile{
+          width: 100%;
+          li{
+            width: 100%;
+            span{
+              &:first-child{
+                display: inline-block;
+                width: 25%;
+                @include font($spoqa, normal, 1.4vw, normal);
+                text-align: right;
+                line-height: 1.58;
+                letter-spacing: -0.5px;
+                margin-right: 1%;
+                text-transform: uppercase;
+              }
+              &:last-child{
+                display: inline-block;
+                @include font($spoqa, 300, 1.4vw, normal);
+                line-height: 1.58;
+                letter-spacing: -0.5px;
+              }
+            }
+          }
+        }
+        button{
+          align-self: flex-end;
+          @include font($spoqa, bold, 22px, normal);
+          color: $white;
+          letter-spacing: -1px;
+          width: 200px;
+          height: 50px;
+          background-color: $green;
+          border-radius: 70px;
+          text-indent: 10px;
         }
       }
     }

@@ -194,6 +194,8 @@ a {
   width: 100%;
   height: 4px;
   background-color: #f2ebdc;
+  -webkit-box-shadow: 0 0 8px rgba(64, 54, 54, 0.5);
+          box-shadow: 0 0 8px rgba(64, 54, 54, 0.5);
   margin-bottom: 11px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -201,6 +203,11 @@ a {
 
 #wrap .menu_btn span:last-child {
   margin: 0;
+}
+
+#wrap .menu_btn.active span {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #wrap .menu_btn.active span:nth-child(1) {
@@ -323,7 +330,7 @@ a {
   width: 47%;
 }
 
-#wrap .sec2 .contain article h5 {
+#wrap .sec2 .contain article h4 {
   font-family: "Bodoni Moda", serif;
   font-size: 71px;
   font-weight: 700;
@@ -332,10 +339,10 @@ a {
   margin-bottom: 4%;
 }
 
-#wrap .sec2 .contain article h6 {
+#wrap .sec2 .contain article h5 {
   font-family: "Spoqa Han Sans Neo", sans-serif;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   color: #f2ebdc;
   margin-bottom: 3%;
@@ -369,4 +376,147 @@ a {
   background-color: #f2ebdc;
   border-radius: 70px;
   text-indent: 20px;
+}
+
+#wrap .sec3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2ebdc;
+}
+
+#wrap .sec3 .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#wrap .sec3 .contain h4 {
+  width: 87.5%;
+  font-family: "Bodoni Moda", serif;
+  font-size: 71px;
+  font-weight: 700;
+  font-style: italic;
+  color: #b1bf9b;
+}
+
+#wrap .sec3 .contain figure {
+  width: 41%;
+  margin-right: 4%;
+}
+
+#wrap .sec3 .contain figure div {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/profile_daisy.png);
+  background-size: 60.75%;
+  background-repeat: no-repeat;
+  background-position: 106% -21%;
+}
+
+#wrap .sec3 .contain figure img {
+  width: 73%;
+  margin-top: 11%;
+}
+
+#wrap .sec3 .contain article {
+  width: 42.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrap .sec3 .contain article h5 {
+  padding-top: 11%;
+}
+
+#wrap .sec3 .contain article h5 span:first-child {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: normal;
+  font-size: 70px;
+  font-style: normal;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  margin-right: 7px;
+}
+
+#wrap .sec3 .contain article h5 span:last-child {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  font-style: normal;
+  letter-spacing: -2.66px;
+}
+
+#wrap .sec3 .contain article ul.profile {
+  width: 100%;
+}
+
+#wrap .sec3 .contain article ul.profile li {
+  width: 100%;
+}
+
+#wrap .sec3 .contain article ul.profile li span:first-child {
+  display: inline-block;
+  width: 25%;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: normal;
+  font-size: 1.4vw;
+  font-style: normal;
+  text-align: right;
+  line-height: 1.58;
+  letter-spacing: -0.5px;
+  margin-right: 1%;
+  text-transform: uppercase;
+}
+
+#wrap .sec3 .contain article ul.profile li span:last-child {
+  display: inline-block;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: 300;
+  font-size: 1.4vw;
+  font-style: normal;
+  line-height: 1.58;
+  letter-spacing: -0.5px;
+}
+
+#wrap .sec3 .contain article button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  font-style: normal;
+  color: #f2ebdc;
+  letter-spacing: -1px;
+  width: 200px;
+  height: 50px;
+  background-color: #b1bf9b;
+  border-radius: 70px;
+  text-indent: 10px;
 }
