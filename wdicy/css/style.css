@@ -824,6 +824,13 @@ a {
 
 #wrap .sec5 .contain article ul.schedule > li {
   margin-bottom: 15px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#wrap .sec5 .contain article ul.schedule > li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #wrap .sec5 .contain article ul.schedule > li > ul {
@@ -880,6 +887,18 @@ a {
 #wrap .sec5 .contain article ul.schedule > li > ul > li:nth-of-type(3) span sub {
   vertical-align: baseline;
   font-size: 16px;
+}
+
+#wrap .sec6 {
+  width: 100%;
+  height: 100vw;
+  background-color: rgba(64, 54, 54, 0.7);
+}
+
+#wrap .sec7 {
+  width: 100%;
+  height: 100vw;
+  background-color: rgba(64, 54, 54, 0.7);
 }
 
 @-webkit-keyframes rotate360 {
