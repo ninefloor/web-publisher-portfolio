@@ -516,6 +516,7 @@
           display: flex;
           justify-content: space-evenly;
           > li{
+            margin-bottom: 15px;
             > ul{
               display: flex;
               flex-direction: column;
@@ -523,7 +524,6 @@
               > li{
                 text-align: center;
                 color: $white;
-                margin-bottom: 15px;
                 &:nth-of-type(1){
                   span{
                     display: block;

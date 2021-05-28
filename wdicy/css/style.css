@@ -822,6 +822,10 @@ a {
           justify-content: space-evenly;
 }
 
+#wrap .sec5 .contain article ul.schedule > li {
+  margin-bottom: 15px;
+}
+
 #wrap .sec5 .contain article ul.schedule > li > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -838,7 +842,6 @@ a {
 #wrap .sec5 .contain article ul.schedule > li > ul > li {
   text-align: center;
   color: #f2ebdc;
-  margin-bottom: 15px;
 }
 
 #wrap .sec5 .contain article ul.schedule > li > ul > li:nth-of-type(1) span {

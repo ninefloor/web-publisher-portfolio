@@ -142,6 +142,63 @@
             order: 2;
     margin-bottom: 10%;
   }
+  #wrap .sec5 {
+    height: auto;
+  }
+  #wrap .sec5 .contain h4 {
+    width: 80%;
+  }
+  #wrap .sec5 .contain figure {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  #wrap .sec5 .contain article {
+    width: 80%;
+  }
+  #wrap .sec5 .contain article div.line {
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #wrap .sec5 .contain article ul.schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #wrap .sec5 .contain article ul.schedule > li {
+    margin: 20px 0;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 5%;
+    position: relative;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) {
+    text-align: left;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(2) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) {
+    text-align: right;
+  }
 }
 
 @media (max-width: 768px) {
@@ -226,6 +283,35 @@
   #wrap .sec4 .contain figure {
     width: 70%;
   }
+  #wrap .sec5 .contain h4 {
+    width: 70%;
+    font-size: 9vw;
+    margin-bottom: 20px;
+  }
+  #wrap .sec5 .contain figure {
+    width: 70%;
+  }
+  #wrap .sec5 .contain article {
+    width: 70%;
+  }
+  #wrap .sec5 .contain article div.line {
+    left: 41%;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(1) {
+    font-size: 22px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(2) {
+    font-size: 12px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(2) {
+    left: 40%;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span {
+    font-size: 18px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -306,5 +392,33 @@
   }
   #wrap .sec4 .contain figure {
     width: 75%;
+  }
+  #wrap .sec5 .contain h4 {
+    width: 75%;
+  }
+  #wrap .sec5 .contain figure {
+    width: 75%;
+  }
+  #wrap .sec5 .contain article {
+    width: 75%;
+  }
+  #wrap .sec5 .contain article div.line {
+    width: 4px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(1) {
+    font-size: 22px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(2) {
+    font-size: 12px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(2) {
+    width: 12px;
+    height: 12px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span {
+    font-size: 14px;
+  }
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
+    font-size: 10px;
   }
 }
