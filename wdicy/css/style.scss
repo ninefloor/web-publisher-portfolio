@@ -176,47 +176,47 @@
       right: 2.1%;
     }
   }
-  .sec2{
+  .sec2 {
     width: 100%;
     height: 100vh;
     background: rgba($black, 0.7);
-    .contain{
+    .contain {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      figure{
+      figure {
         width: 35%;
         margin-right: 5.5%;
-        img{
+        img {
           width: 100%;
           max-width: 672px;
         }
       }
-      article{
+      article {
         text-align: right;
         width: 47%;
-        h4{
+        h4 {
           @include secTitle(71px, $brown);
           margin-bottom: 4%;
         }
-        h5{
+        h5 {
           @include font($spoqa, bold, 22px, normal);
           color: $white;
           margin-bottom: 3%;
         }
-        p{
+        p {
           @include font($spoqa, normal, 18px, normal);
           text-indent: 10px;
           color: $white;
           text-align: justify;
           letter-spacing: -1px;
           margin-bottom: 3%;
-          &:last-of-type{
+          &:last-of-type {
             margin-bottom: 7%;
           }
         }
-        button{
+        button {
           @include font($spoqa, bold, 22px, normal);
           color: $black;
           letter-spacing: -1px;
@@ -229,25 +229,25 @@
       }
     }
   }
-  .sec3{
+  .sec3 {
     width: 100%;
     height: 100vh;
     background-color: $white;
-    .contain{
+    .contain {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
       align-items: stretch;
-      h4{
+      h4 {
         width: 87.5%;
         @include secTitle(71px, $green);
       }
-      figure{
+      figure {
         width: 41%;
         margin-right: 4%;
-        div{
+        div {
           width: 100%;
           height: 100%;
           background-image: url(../images/profile_daisy.png);
@@ -255,39 +255,39 @@
           background-repeat: no-repeat;
           background-position: 106% -21%;
         }
-        img{
+        img {
           width: 73%;
           margin-top: 11%;
         }
       }
-      article{
+      article {
         width: 42.5%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         box-sizing: border-box;
-        h5{
+        h5 {
           padding-top: 11%;
-          span{
-            &:first-child{
+          span {
+            &:first-child {
               @include font($tenor, normal, 70px, normal);
               letter-spacing: -5px;
               text-transform: uppercase;
               margin-right: 7px;
             }
-            &:last-child{
+            &:last-child {
               @include font($spoqa, normal, 36px, normal);
               letter-spacing: -2.66px;
             }
           }
         }
-        ul.profile{
+        ul.profile {
           width: 100%;
-          li{
+          li {
             width: 100%;
-            span{
-              &:first-child{
+            span {
+              &:first-child {
                 display: inline-block;
                 width: 25%;
                 @include font($spoqa, normal, 1.4vw, normal);
@@ -297,20 +297,20 @@
                 margin-right: 1%;
                 text-transform: uppercase;
               }
-              &:last-child{
+              &:last-child {
                 display: inline-block;
                 @include font($spoqa, 300, 1.4vw, normal);
                 line-height: 1.58;
                 letter-spacing: -0.5px;
               }
-              sub{
+              sub {
                 vertical-align: baseline;
                 font-size: smaller;
               }
             }
           }
         }
-        button{
+        button {
           align-self: flex-end;
           @include font($spoqa, bold, 22px, normal);
           color: $white;
@@ -320,6 +320,130 @@
           background-color: $green;
           border-radius: 70px;
           text-indent: 10px;
+        }
+      }
+    }
+  }
+  .sec4 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($black, 0.7);
+    .contain {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      align-items: stretch;
+      h4 {
+        width: 87.5%;
+        @include secTitle(71px, $brown);
+      }
+      article {
+        width: 38.5%;
+        margin-right: 4%;
+        ul.track_list {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          li {
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            h5 {
+              width: 100%;
+              @include font($spoqa, 300, 32px, normal);
+              letter-spacing: -0.8px;
+              color: $white;
+              position: relative;
+              margin-bottom: 5px;
+              sub {
+                vertical-align: baseline;
+                font-weight: 300;
+                font-size: 16px;
+              }
+              &::after {
+                content: "";
+                display: block;
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                top: 12.5px;
+                right: 12.5px;
+                background-image: url(../images/play.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                opacity: 0;
+                transition: all 0.2s ease;
+              }
+              &:hover {
+                &::after {
+                  opacity: 1;
+                }
+              }
+            }
+            p {
+              width: 100%;
+              @include font($spoqa, normal, 22px, normal);
+              text-indent: 10px;
+              letter-spacing: -0.5px;
+              color: $white;
+            }
+            &.active {
+              height: auto;
+              h5 {
+                font-weight: bold;
+                letter-spacing: -0.8px;
+                color: $white;
+                sub {
+                  vertical-align: baseline;
+                  font-size: 16px;
+                  font-weight: 300;
+                }
+                &::after {
+                  content: "";
+                  display: block;
+                  width: 25px;
+                  height: 25px;
+                  position: absolute;
+                  top: 12.5px;
+                  right: 12.5px;
+                  background-image: url(../images/pause.svg);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+      figure {
+        width: 45%;
+        > div {
+          width: 100%;
+          height: 100%;
+          background-image: url(../images/rose.png);
+          background-size: 50%;
+          background-repeat: no-repeat;
+          background-position: 10% 90%;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            &:first-of-type {
+              width: 65%;
+              transform: rotate(30deg);
+            }
+            &:last-of-type {
+              width: 53%;
+              position: absolute;
+              top: 50%; right: 0;
+              transform: translateY(-50%);
+            }
+          }
         }
       }
     }

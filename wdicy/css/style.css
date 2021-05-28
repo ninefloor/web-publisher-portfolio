@@ -525,3 +525,180 @@ a {
   border-radius: 70px;
   text-indent: 10px;
 }
+
+#wrap .sec4 {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(64, 54, 54, 0.7);
+}
+
+#wrap .sec4 .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+#wrap .sec4 .contain h4 {
+  width: 87.5%;
+  font-family: "Bodoni Moda", serif;
+  font-size: 71px;
+  font-weight: 700;
+  font-style: italic;
+  color: #d99f7e;
+}
+
+#wrap .sec4 .contain article {
+  width: 38.5%;
+  margin-right: 4%;
+}
+
+#wrap .sec4 .contain article ul.track_list {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#wrap .sec4 .contain article ul.track_list li {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+#wrap .sec4 .contain article ul.track_list li h5 {
+  width: 100%;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: 300;
+  font-size: 32px;
+  font-style: normal;
+  letter-spacing: -0.8px;
+  color: #f2ebdc;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+#wrap .sec4 .contain article ul.track_list li h5 sub {
+  vertical-align: baseline;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+#wrap .sec4 .contain article ul.track_list li h5::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12.5px;
+  right: 12.5px;
+  background-image: url(../images/play.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#wrap .sec4 .contain article ul.track_list li h5:hover::after {
+  opacity: 1;
+}
+
+#wrap .sec4 .contain article ul.track_list li p {
+  width: 100%;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  font-style: normal;
+  text-indent: 10px;
+  letter-spacing: -0.5px;
+  color: #f2ebdc;
+}
+
+#wrap .sec4 .contain article ul.track_list li.active {
+  height: auto;
+}
+
+#wrap .sec4 .contain article ul.track_list li.active h5 {
+  font-weight: bold;
+  letter-spacing: -0.8px;
+  color: #f2ebdc;
+}
+
+#wrap .sec4 .contain article ul.track_list li.active h5 sub {
+  vertical-align: baseline;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#wrap .sec4 .contain article ul.track_list li.active h5::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 12.5px;
+  right: 12.5px;
+  background-image: url(../images/pause.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#wrap .sec4 .contain figure {
+  width: 45%;
+}
+
+#wrap .sec4 .contain figure > div {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/rose.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 10% 90%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap .sec4 .contain figure > div img:first-of-type {
+  width: 65%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#wrap .sec4 .contain figure > div img:last-of-type {
+  width: 53%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
