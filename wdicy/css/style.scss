@@ -384,13 +384,17 @@
                 width: 25px;
                 height: 25px;
                 position: absolute;
-                top: 12.5px;
-                right: 12.5px;
+                top: 50%;
+                right: 0;
                 background-image: url(../images/play.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 opacity: 0;
                 transition: all 0.2s ease;
+                transform: translateY(-50%);
+              }
+              &.active::after {
+                background-image: url(../images/pause.svg);
               }
               &:hover {
                 &::after {
@@ -412,22 +416,13 @@
                 font-weight: bold;
                 letter-spacing: -0.8px;
                 color: $white;
+                &::after{
+                  opacity: 1;
+                }
                 sub {
                   vertical-align: baseline;
                   font-size: 16px;
                   font-weight: 300;
-                }
-                &::after {
-                  content: "";
-                  display: block;
-                  width: 25px;
-                  height: 25px;
-                  position: absolute;
-                  top: 12.5px;
-                  right: 12.5px;
-                  background-image: url(../images/pause.svg);
-                  background-repeat: no-repeat;
-                  background-size: contain;
                 }
               }
             }

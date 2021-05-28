@@ -387,6 +387,10 @@
   #wrap .sec4 .contain article ul.track_list li h5 {
     font-size: 21px;
   }
+  #wrap .sec4 .contain article ul.track_list li h5::after {
+    width: 18px;
+    height: 18px;
+  }
   #wrap .sec4 .contain article ul.track_list li p {
     font-size: 16px;
   }

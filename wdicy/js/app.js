@@ -21,8 +21,19 @@ function menuBtn(){
 
 function track(){
   $(".track_list>li").click(function(){
-    let idx = $(this).index();
-    $(".track_list>li").removeClass("active");
-    $(".track_list>li").eq(idx).addClass("active");
+    let listState=$(this).hasClass("active");
+    let playState=$(this).find("h5").hasClass("active");
+    console.log(listState);
+    console.log(playState);
+    if(listState==false && playState==false){
+      $(".track_list>li").removeClass("active");
+      $(".track_list>li>h5").removeClass("active");
+      $(this).addClass("active");
+      $(this).find("h5").addClass("active");
+    } else if(listState==true && playState==true) {
+      $(this).find("h5").removeClass("active");
+    } else if(listState==true && playState==false) {
+      $(this).find("h5").addClass("active");
+    }
   })
 }

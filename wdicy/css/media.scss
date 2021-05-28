@@ -447,6 +447,10 @@
             li{
               h5{
                 font-size: 21px;
+                &::after{
+                  width: 18px;
+                  height: 18px;
+                }
               }
               p{
                 font-size: 16px;

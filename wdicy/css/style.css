@@ -642,14 +642,20 @@ a {
   width: 25px;
   height: 25px;
   position: absolute;
-  top: 12.5px;
-  right: 12.5px;
+  top: 50%;
+  right: 0;
   background-image: url(../images/play.svg);
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#wrap .sec4 .contain article ul.track_list li h5.active::after {
+  background-image: url(../images/pause.svg);
 }
 
 #wrap .sec4 .contain article ul.track_list li h5:hover::after {
@@ -678,23 +684,14 @@ a {
   color: #f2ebdc;
 }
 
+#wrap .sec4 .contain article ul.track_list li.active h5::after {
+  opacity: 1;
+}
+
 #wrap .sec4 .contain article ul.track_list li.active h5 sub {
   vertical-align: baseline;
   font-size: 16px;
   font-weight: 300;
-}
-
-#wrap .sec4 .contain article ul.track_list li.active h5::after {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 12.5px;
-  right: 12.5px;
-  background-image: url(../images/pause.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 #wrap .sec4 .contain figure {
