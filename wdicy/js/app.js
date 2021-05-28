@@ -1,6 +1,7 @@
 $(document).ready(function(){
   title();
   menuBtn();
+  track();
 })
 
 function title(){
@@ -15,5 +16,13 @@ function menuBtn(){
     e.preventDefault();
     $(this).toggleClass("active");
     $("#nav").fadeToggle(400);
+  })
+}
+
+function track(){
+  $(".track_list>li").click(function(){
+    let idx = $(this).index();
+    $(".track_list>li").removeClass("active");
+    $(".track_list>li").eq(idx).addClass("active");
   })
 }
