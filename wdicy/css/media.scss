@@ -1,3 +1,26 @@
+@media (min-width: 1920px){
+  #wrap{
+    .sec3{
+      .contain{
+        article{
+          ul.profile{
+            li{
+              span{
+                &:first-child{
+                  font-size: 26.88px;
+                }
+                &:last-child{
+                  font-size: 26.88px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px){
   .contain{
     padding: 40px 0;
@@ -92,10 +115,10 @@
               span{
                 &:first-child{
                   width: 25%;
-                  font-size: 2.8vw;
+                  font-size: 2.7vw;
                 }
                 &:last-child{
-                  font-size: 2.8vw;
+                  font-size: 2.7vw;
                 }
               }
             }
@@ -204,10 +227,10 @@
               span{
                 &:first-child{
                   width: 25%;
-                  font-size: 2.5vw;
+                  font-size: 2.4vw;
                 }
                 &:last-child{
-                  font-size: 2.5vw;
+                  font-size: 2.4vw;
                 }
               }
             }

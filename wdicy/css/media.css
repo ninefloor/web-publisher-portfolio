@@ -1,3 +1,12 @@
+@media (min-width: 1920px) {
+  #wrap .sec3 .contain article ul.profile li span:first-child {
+    font-size: 26.88px;
+  }
+  #wrap .sec3 .contain article ul.profile li span:last-child {
+    font-size: 26.88px;
+  }
+}
+
 @media (max-width: 1024px) {
   .contain {
     padding: 40px 0;
@@ -90,10 +99,10 @@
   }
   #wrap .sec3 .contain article ul.profile li span:first-child {
     width: 25%;
-    font-size: 2.8vw;
+    font-size: 2.7vw;
   }
   #wrap .sec3 .contain article ul.profile li span:last-child {
-    font-size: 2.8vw;
+    font-size: 2.7vw;
   }
   #wrap .sec4 {
     height: auto;
@@ -195,10 +204,10 @@
   }
   #wrap .sec3 .contain article ul.profile li span:first-child {
     width: 25%;
-    font-size: 2.5vw;
+    font-size: 2.4vw;
   }
   #wrap .sec3 .contain article ul.profile li span:last-child {
-    font-size: 2.5vw;
+    font-size: 2.4vw;
   }
   #wrap .sec4 .contain h4 {
     width: 70%;
