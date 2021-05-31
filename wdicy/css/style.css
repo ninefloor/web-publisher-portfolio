@@ -1087,6 +1087,75 @@ a {
   background-color: rgba(64, 54, 54, 0.7);
 }
 
+#wrap .sec7 .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+#wrap .sec7 .contain h4 {
+  width: 87.5%;
+  font-family: "Bodoni Moda", serif;
+  font-size: 71px;
+  font-weight: 700;
+  font-style: italic;
+  color: #d99f7e;
+  text-align: left;
+}
+
+#wrap .sec7 .contain article {
+  width: 87.5%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+#wrap .sec7 .contain article a {
+  display: block;
+  width: 18%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#wrap .sec7 .contain article a::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+#wrap .sec7 .contain article a div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap .sec7 .contain article a div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @-webkit-keyframes rotate360 {
   from {
     -webkit-transform: rotate(0deg);
