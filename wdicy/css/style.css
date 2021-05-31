@@ -737,7 +737,7 @@ a {
 
 #wrap .sec5 {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-color: #b1bf9b;
 }
 
@@ -821,8 +821,8 @@ a {
 
 #wrap .sec5 .contain article ul.schedule > li {
   margin-bottom: 15px;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #wrap .sec5 .contain article ul.schedule > li:hover {
@@ -888,13 +888,202 @@ a {
 
 #wrap .sec6 {
   width: 100%;
-  height: 100vw;
+  height: 100vh;
   background-color: rgba(64, 54, 54, 0.7);
+}
+
+#wrap .sec6 .contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#wrap .sec6 .contain h4 {
+  width: 87.5%;
+  font-family: "Bodoni Moda", serif;
+  font-size: 71px;
+  font-weight: 700;
+  font-style: italic;
+  color: #d99f7e;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+#wrap .sec6 .contain > div.mv {
+  width: 41.7%;
+  position: relative;
+  margin-right: 10px;
+}
+
+#wrap .sec6 .contain > div.mv a {
+  position: relative;
+  display: block;
+  padding: 20px 0 40px 10px;
+  background-image: url(../images/video_daisy.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#wrap .sec6 .contain > div.mv a figure {
+  width: 55%;
+}
+
+#wrap .sec6 .contain > div.mv a figure > img {
+  width: 100%;
+}
+
+#wrap .sec6 .contain > div.mv a figure figcaption {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 55%;
+  height: 88%;
+  background-color: rgba(64, 54, 54, 0.5);
+  font-family: "Bodoni Moda", serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+  font-style: normal;
+  text-align: center;
+  padding-top: 19%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f2ebdc;
+  letter-spacing: -1px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  text-transform: uppercase;
+}
+
+#wrap .sec6 .contain > div.mv a > img {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#wrap .sec6 .contain > div.mv a:hover figure figcaption {
+  opacity: 1;
+}
+
+#wrap .sec6 .contain > div.videoclip {
+  width: 45.3%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#wrap .sec6 .contain > div.videoclip article {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#wrap .sec6 .contain > div.videoclip article h5 {
+  width: 100%;
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  font-style: normal;
+  color: #f2ebdc;
+  letter-spacing: -2.66px;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist li {
+  width: 23%;
+  margin: 0 1%;
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist li a {
+  width: 100%;
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist li a figure {
+  width: 100%;
+  position: relative;
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist li a figure img {
+  display: block;
+  width: 100%;
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist li a figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: "Bodoni Moda", serif;
+  font-weight: bold;
+  font-size: 1vw;
+  font-style: normal;
+  text-align: center;
+  padding-top: 19%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #f2ebdc;
+  letter-spacing: -1px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+  background-color: rgba(64, 54, 54, 0.5);
+}
+
+#wrap .sec6 .contain > div.videoclip article ul.videolist li:hover a figure figcaption {
+  opacity: 1;
+}
+
+#wrap .sec6 .contain > div.videoclip article.liveclip ul.videolist {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #wrap .sec7 {
   width: 100%;
-  height: 100vw;
+  height: 100vh;
   background-color: rgba(64, 54, 54, 0.7);
 }
 
