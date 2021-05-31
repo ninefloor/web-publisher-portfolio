@@ -13,9 +13,13 @@
     href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap"
     rel="stylesheet">
   <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <!-- lightbox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
   <script>
     // iOS 100vh 버그 픽스
     const appHeight = () => {
@@ -32,6 +36,15 @@
     window.addEventListener('resize', appHeight);
     // 리사이즈 될 때마다 함수 실행
     appHeight();
+    // lightbox 설정
+    lightbox.option({
+      resizeDuration: 200,
+      wrapAround: false,
+      disableScrolling: true,
+      fitImagesInViewport: true,
+      showImageNumberLabel: false,
+      alwaysShowNavOnTouchDevices: true
+    });
   </script>
   <script src="./js/app.js"></script>
 </head>
@@ -135,27 +148,34 @@
           <ul class="track_list">
             <li class="active">
               <h5 class="">1. What Do I Call You <sub>TITLE</sub></h5>
-              <p>타이틀 곡 ‘What Do I Call You’는 개성 있는 악기들이 만들어내는 미니멀하고 리드미컬한 선율이 특징인 알앤비 팝곡으로, 이별 후에도 여전히 주변을 맴도는 그에게 느끼는 감정을 덤덤하고 무심하게 노래하는 태연의 보컬이 돋보인다.</p>
+              <p>타이틀 곡 ‘What Do I Call You’는 개성 있는 악기들이 만들어내는 미니멀하고 리드미컬한 선율이 특징인 알앤비 팝곡으로, 이별 후에도 여전히 주변을 맴도는 그에게 느끼는
+                감정을 덤덤하고 무심하게 노래하는 태연의 보컬이 돋보인다.</p>
             </li>
             <li>
               <h5>2. Playlist</h5>
-              <p>‘Playlist’는 어쿠스틱 기타와 피아노, 레트로한 오르간 사운드가 부드럽고 나른한 태연의 목소리와 어우러져 감성을 자극하는 곡으로, 가사에는 사랑하는 사람에게 추억과 애정을 오롯이 담은 플레이리스트를 선물한다는 내용을 담았다.</p>
+              <p>‘Playlist’는 어쿠스틱 기타와 피아노, 레트로한 오르간 사운드가 부드럽고 나른한 태연의 목소리와 어우러져 감성을 자극하는 곡으로, 가사에는 사랑하는 사람에게 추억과 애정을 오롯이
+                담은 플레이리스트를 선물한다는 내용을 담았다.</p>
             </li>
             <li>
               <h5>3. To the moon</h5>
-              <p>‘To the moon’은 부드러우면서도 간결한 비트를 타고 시크하게 툭 던지는 듯한 태연의 가창이 돋보이는 곡으로, 기분이 한없이 바닥으로 가라앉을 때, 감정을 훌훌 털어버리고 하늘 높이 떠있는 달로 떠나고 싶은 마음을 가사로 표현했다. 태연의 반려견 제로를 위한 헌정곡이고 태연이 작사, 작곡에 참여함은 물론, 프로듀싱팀 디바인채널(Devine Channel), 알앤비 신예 아티스트 SOLE(쏠)도 함께 작업해 곡의 매력을 더했다.</p>
+              <p>‘To the moon’은 부드러우면서도 간결한 비트를 타고 시크하게 툭 던지는 듯한 태연의 가창이 돋보이는 곡으로, 기분이 한없이 바닥으로 가라앉을 때, 감정을 훌훌 털어버리고 하늘
+                높이 떠있는 달로 떠나고 싶은 마음을 가사로 표현했다. 태연의 반려견 제로를 위한 헌정곡이고 태연이 작사, 작곡에 참여함은 물론, 프로듀싱팀 디바인채널(Devine Channel),
+                알앤비 신예 아티스트 SOLE(쏠)도 함께 작업해 곡의 매력을 더했다.</p>
             </li>
             <li>
               <h5>4. 들불 (Wildfire)</h5>
-              <p>‘들불 (Wildfire)’은 질주하는 듯한 반주 위에 끝없이 전개되는 태연의 보컬이 밝은 에너지를 만들어내는 곡으로, 경쾌하고 발랄한 기타 신스가 흥을 돋우며, 뜨겁게 번져가는 사랑의 감정을 들판에 번지는 불꽃에 비유한 가사가 특징이다.</p>
+              <p>‘들불 (Wildfire)’은 질주하는 듯한 반주 위에 끝없이 전개되는 태연의 보컬이 밝은 에너지를 만들어내는 곡으로, 경쾌하고 발랄한 기타 신스가 흥을 돋우며, 뜨겁게 번져가는 사랑의
+                감정을 들판에 번지는 불꽃에 비유한 가사가 특징이다.</p>
             </li>
             <li>
               <h5>5. Galaxy</h5>
-              <p>‘Galaxy’는 잔잔한 기타와 따뜻한 피아노 선율이 어우러진 미니멀한 알앤비 발라드로, 흐르는 듯 한 아름다운 멜로디와 짙은 감성을 더하는 부드러운 사운드가 인상적이다. 가사에는 칠흑 같은 어둠 속 하나의 빛으로 시작된 우주처럼, 한 사람을 만나 모든 게 달라지는 기적 같은 순간을 그렸다.</p>
+              <p>‘Galaxy’는 잔잔한 기타와 따뜻한 피아노 선율이 어우러진 미니멀한 알앤비 발라드로, 흐르는 듯 한 아름다운 멜로디와 짙은 감성을 더하는 부드러운 사운드가 인상적이다. 가사에는 칠흑
+                같은 어둠 속 하나의 빛으로 시작된 우주처럼, 한 사람을 만나 모든 게 달라지는 기적 같은 순간을 그렸다.</p>
             </li>
             <li>
               <h5>6. Happy <sub>CD-ONLY</sub></h5>
-              <p>지난 5월 싱글로 공개된 ‘Happy’는 올드스쿨 두왑(doo-wop)과 알앤비를 현대적인 사운드로 재해석한 알앤비 팝 장르 곡으로, 808 드럼머신 사운드와 풍성한 보컬 하모니의 조화가 신선함을 주며 사랑하는 사람과 함께 하는 시간 속에서 느끼는 따듯하고 포근한 설렘과 행복을 담은 가사가 인상적이다.</p>
+              <p>지난 5월 싱글로 공개된 ‘Happy’는 올드스쿨 두왑(doo-wop)과 알앤비를 현대적인 사운드로 재해석한 알앤비 팝 장르 곡으로, 808 드럼머신 사운드와 풍성한 보컬 하모니의
+                조화가 신선함을 주며 사랑하는 사람과 함께 하는 시간 속에서 느끼는 따듯하고 포근한 설렘과 행복을 담은 가사가 인상적이다.</p>
             </li>
           </ul>
         </article>
@@ -173,9 +193,9 @@
       <div class="contain">
         <h4>Promotion</h4>
         <figure>
-            <img src="./images/reel-to-reel.png" alt="릴투릴테이프">
-            <img src="./images/reel1.png" alt="왼쪽릴테이프">
-            <img src="./images/reel2.png" alt="오른쪽릴테이프">
+          <img src="./images/reel-to-reel.png" alt="릴투릴테이프">
+          <img src="./images/reel1.png" alt="왼쪽릴테이프">
+          <img src="./images/reel2.png" alt="오른쪽릴테이프">
         </figure>
         <article>
           <h4 class="ir_su">일정</h4>
@@ -237,32 +257,60 @@
               <img src="./images/mv2.gif" alt="뮤직비디오">
               <figcaption>What Do I Call You <br> MV</figcaption>
             </figure>
-              <img src="./images/tv.png" alt="텔레비전">
+            <img src="./images/tv.png" alt="텔레비전">
           </a>
         </div>
         <div class="videoclip">
           <article class="highlight">
             <h5>Highlight</h5>
             <ul class="videolist">
-              <li><a href="#"><figure>
-              <img src="./images/highlight_playlist.png" alt="Playlist"><figcaption>Playlist</figcaption></figure></a></li>
-              <li><a href="#"><figure>
-              <img src="./images/highlight_wildfire.png" alt="Wildfire"><figcaption>Wildfire</figcaption></figure></a></li>
-              <li><a href="#"><figure>
-              <img src="./images/highlight_galaxy.png" alt="Galaxy"><figcaption>Galaxy</figcaption></figure></a></li>
-              <li><a href="#"><figure>
-              <img src="./images/highlight_tothemoon.png" alt="To The Moon"><figcaption>To The Moon</figcaption></figure></a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/highlight_playlist.png" alt="Playlist">
+                    <figcaption>Playlist</figcaption>
+                  </figure>
+                </a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/highlight_wildfire.png" alt="Wildfire">
+                    <figcaption>Wildfire</figcaption>
+                  </figure>
+                </a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/highlight_galaxy.png" alt="Galaxy">
+                    <figcaption>Galaxy</figcaption>
+                  </figure>
+                </a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/highlight_tothemoon.png" alt="To The Moon">
+                    <figcaption>To The Moon</figcaption>
+                  </figure>
+                </a></li>
             </ul>
           </article>
           <article class="liveclip">
             <h5>Live Clip</h5>
             <ul class="videolist">
-              <li><a href="#"><figure>
-              <img src="./images/live_whatdoicallyou.png" alt="What do I call you"><figcaption>What Do I Call You</figcaption></figure></a></li>
-              <li><a href="#"><figure>
-              <img src="./images/live_playlist.png" alt="Playlist"><figcaption>Playlist</figcaption></figure></a></li>
-              <li><a href="#"><figure>
-              <img src="./images/live_galaxy.png" alt="Galaxy"><figcaption>Galaxy</figcaption></figure></a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/live_whatdoicallyou.png" alt="What do I call you">
+                    <figcaption>What Do I Call You</figcaption>
+                  </figure>
+                </a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/live_playlist.png" alt="Playlist">
+                    <figcaption>Playlist</figcaption>
+                  </figure>
+                </a></li>
+              <li><a href="#">
+                  <figure>
+                    <img src="./images/live_galaxy.png" alt="Galaxy">
+                    <figcaption>Galaxy</figcaption>
+                  </figure>
+                </a></li>
             </ul>
           </article>
         </div>
@@ -272,9 +320,22 @@
       <h3 class="ir_su">갤러리</h3>
       <div class="contain">
         <h4>Gallery</h4>
+        <article>
+          <h5 class="ir_su">lightbox gallery</h5>
+          <a href="./images/gallery/1.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/1.png" alt="01"></a>
+          <a href="./images/gallery/2.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/2.png" alt="02"></a>
+          <a href="./images/gallery/3.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/3.png" alt="03"></a>
+          <a href="./images/gallery/4.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/4.png" alt="04"></a>
+          <a href="./images/gallery/5.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/5.png" alt="05"></a>
+          <a href="./images/gallery/6.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/6.png" alt="06"></a>
+          <a href="./images/gallery/7.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/7.png" alt="07"></a>
+          <a href="./images/gallery/8.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/8.png" alt="08"></a>
+          <a href="./images/gallery/9.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/9.png" alt="09"></a>
+          <a href="./images/gallery/10.jpg" data-lightbox="gallery"><img src="./images/gallery/thumbnail/10.png" alt="10"></a>
+        </article>
       </div>
     </section>
   </div>
-</body>
 
+</body>
 </html>
