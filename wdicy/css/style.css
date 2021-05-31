@@ -648,10 +648,10 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 #wrap .sec4 .contain article ul.track_list li h5.active::after {
