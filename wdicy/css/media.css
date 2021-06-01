@@ -202,6 +202,40 @@
   #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) {
     text-align: right;
   }
+  #wrap .sec6 {
+    height: auto;
+  }
+  #wrap .sec6 .contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #wrap .sec6 .contain h4 {
+    width: 80%;
+  }
+  #wrap .sec6 .contain > div.mv {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 10%;
+  }
+  #wrap .sec6 .contain > div.mv a figure figcaption {
+    font-size: 3vw;
+  }
+  #wrap .sec6 .contain > div.videoclip {
+    width: 80%;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist {
+    margin-bottom: 5%;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li a figure figcaption {
+    font-size: 2.1vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -315,6 +349,35 @@
   #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
     font-size: 12px;
   }
+  #wrap .sec6 .contain h4 {
+    width: 70%;
+  }
+  #wrap .sec6 .contain > div.mv {
+    width: 70%;
+  }
+  #wrap .sec6 .contain > div.mv a {
+    padding: 10px 0 40px 10px;
+  }
+  #wrap .sec6 .contain > div.mv a figure figcaption {
+    font-size: 3vw;
+    height: 75%;
+  }
+  #wrap .sec6 .contain > div.videoclip {
+    width: 70%;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li a figure figcaption {
+    font-size: 7vw;
+  }
 }
 
 @media (max-width: 480px) {
@@ -402,6 +465,7 @@
   }
   #wrap .sec5 .contain h4 {
     width: 75%;
+    font-size: 12vw;
   }
   #wrap .sec5 .contain figure {
     width: 75%;
@@ -427,5 +491,31 @@
   }
   #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
     font-size: 10px;
+  }
+  #wrap .sec6 .contain h4 {
+    width: 75%;
+    font-size: 12vw;
+  }
+  #wrap .sec6 .contain > div.mv {
+    width: 75%;
+  }
+  #wrap .sec6 .contain > div.mv a figure figcaption {
+    font-size: 3vw;
+  }
+  #wrap .sec6 .contain > div.videoclip {
+    width: 75%;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li a figure figcaption {
+    font-size: 7vw;
   }
 }

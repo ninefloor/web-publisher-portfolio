@@ -204,6 +204,46 @@
         }
       }
     }
+    .sec6{
+      height: auto;
+      .contain{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        h4{
+          width: 80%;
+        }
+        > div.mv{
+          width: 80%;
+          margin-right: 0;
+          margin-bottom: 10%;
+          a{
+            figure{
+              figcaption{
+                font-size: 3vw;
+              }
+            }
+          }
+        }
+        > div.videoclip{
+          width: 80%;
+          article{
+            ul.videolist{
+              margin-bottom: 5%;
+              li{
+                a{
+                  figure{
+                    figcaption{
+                      font-size: 2.1vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -360,6 +400,44 @@
         }
       }
     }
+    .sec6{
+      .contain{
+        h4{
+          width: 70%;
+        }
+        > div.mv{
+          width: 70%;
+          a{
+            padding: 10px 0 40px 10px;
+            figure{
+              figcaption{
+                font-size: 3vw;
+                height: 75%;
+              }
+            }
+          }
+        }
+        > div.videoclip{
+          width: 70%;
+          article{
+            ul.videolist{
+              flex-direction: column;
+              li{
+                width: 100%;
+                margin-bottom: 2%;
+                a{
+                  figure{
+                    figcaption{
+                      font-size: 7vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -470,6 +548,7 @@
       .contain{
         h4{
           width: 75%;
+          font-size: 12vw;
         }
         figure{
           width: 75%;
@@ -503,6 +582,45 @@
                       sub{
                         font-size: 10px;
                       }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec6{
+      .contain{
+        h4{
+          width: 75%;
+          font-size: 12vw;
+        }
+        > div.mv{
+          width: 75%;
+          a{
+            figure{
+              figcaption{
+
+                font-size: 3vw;
+                
+              }
+            }
+          }
+        }
+        > div.videoclip{
+          width: 75%;
+          article{
+            ul.videolist{
+              flex-direction: column;
+              li{
+                width: 100%;
+                margin-bottom: 2%;
+                a{
+                  figure{
+                    figcaption{
+                      font-size: 7vw;
                     }
                   }
                 }
