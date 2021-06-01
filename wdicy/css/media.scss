@@ -471,6 +471,15 @@
         }
       }
     }
+    #footer{
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      address{
+        padding-top: 0;
+        font-size: 14px;
+      }
+    }
   }
 }
 

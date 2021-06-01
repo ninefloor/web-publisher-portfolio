@@ -415,6 +415,22 @@
   #wrap .sec7 .contain article a {
     width: 48%;
   }
+  #wrap #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #wrap #footer address {
+    padding-top: 0;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
