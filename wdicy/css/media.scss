@@ -31,6 +31,9 @@
         padding-right: 0;
         li{
           text-align: center;
+          &.sns{
+            text-align: center;
+          }
           a{
             font-size: 6.5vw;
             letter-spacing: -0.5vw;

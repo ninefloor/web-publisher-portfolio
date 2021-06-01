@@ -17,6 +17,9 @@
   #wrap #nav .menu li {
     text-align: center;
   }
+  #wrap #nav .menu li.sns {
+    text-align: center;
+  }
   #wrap #nav .menu li a {
     font-size: 6.5vw;
     letter-spacing: -0.5vw;

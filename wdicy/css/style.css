@@ -182,6 +182,46 @@ a {
   background-color: #f2ebdc;
 }
 
+#wrap #nav .menu li.sns {
+  text-align: left;
+}
+
+#wrap #nav .menu li.sns .icon {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 25px;
+}
+
+#wrap #nav .menu li.sns .icon.youtube {
+  background-image: url(../images/youtube-brands.svg);
+}
+
+#wrap #nav .menu li.sns .icon.instagram {
+  background-image: url(../images/instagram-brands.svg);
+}
+
+#wrap #nav .menu li.sns .icon.twitter {
+  background-image: url(../images/twitter-brands.svg);
+}
+
+#wrap #nav .menu li.sns .icon.facebook {
+  width: 26px;
+  background-image: url(../images/facebook-f-brands.svg);
+  margin: 0;
+}
+
+#wrap #nav .menu li.sns:hover a {
+  color: #f2ebdc;
+}
+
+#wrap #nav .menu li.sns:hover::after {
+  background-color: rgba(242, 235, 220, 0);
+}
+
 #wrap .menu_btn {
   display: block;
   position: fixed;
@@ -1154,6 +1194,49 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#wrap #footer {
+  width: 100%;
+  height: 200px;
+  background-color: #403636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+}
+
+#wrap #footer .logo {
+  width: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#wrap #footer .logo img {
+  width: 60px;
+}
+
+#wrap #footer address {
+  width: 75%;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+  color: #f2ebdc;
+  padding-top: 90px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes rotate360 {
