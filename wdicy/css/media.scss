@@ -244,6 +244,25 @@
         }
       }
     }
+    .sec7{
+      height: auto;
+      .contain{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        h4{
+          width: 80%;
+          margin-bottom: 40px;
+        }
+        article{
+          width: 80%;
+          height: auto;
+          a{
+            width: 48%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -438,6 +457,20 @@
         }
       }
     }
+    .sec7{
+      height: auto;
+      .contain{
+        h4{
+          width: 70%;
+        }
+        article{
+          width: 70%;
+          a{
+            width: 48%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -625,6 +658,24 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+    .sec7{
+      height: auto;
+      .contain{
+        h4{
+          width: 75%;
+          font-size: 12vw;
+        }
+        article{
+          width: 75%;
+          a{
+            width: 100%;
+            &:nth-of-type(3n){
+              display: none;
             }
           }
         }
