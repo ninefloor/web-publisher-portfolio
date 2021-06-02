@@ -451,6 +451,16 @@
     -webkit-transform: translateY(-8px) rotate(45deg);
             transform: translateY(-8px) rotate(45deg);
   }
+  #wrap #nav .menu li.sns {
+    padding-top: 25px;
+  }
+  #wrap #nav .menu li.sns .icon {
+    width: 24px;
+    height: 24px;
+  }
+  #wrap #nav .menu li.sns .icon.facebook {
+    width: 16px;
+  }
   #wrap .sec2 .contain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

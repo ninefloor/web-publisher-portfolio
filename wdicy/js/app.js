@@ -28,7 +28,7 @@ function menu(){
     $(this).toggleClass("active"); // 클릭 시 버튼 X자로 변경
     $("#nav").fadeToggle(400); // #nav 표시
   })
-  $("#nav>.menu>li>a").click(function(e){
+  $("#nav>.menu>.menu_li>a").click(function(e){
     e.preventDefault(); // a 태그 작동 방지
     let section = $("#wrap>section"); // 섹션 변수 설정
     let target = $(this).closest("li"); // 클릭한 a 태그 부모요소인 li 변수 설정 (eq, index 작동을 위함)

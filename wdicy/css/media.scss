@@ -504,6 +504,22 @@
         }
       }
     }
+    #nav{
+      .menu{
+        li{
+          &.sns{
+            padding-top: 25px;
+            .icon{
+              width: 24px;
+              height: 24px;
+              &.facebook{
+                width: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
     .sec2{
       .contain{
         flex-direction: column;

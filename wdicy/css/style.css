@@ -183,7 +183,7 @@ a {
 
 #wrap #nav .menu li.sns {
   text-align: left;
-  height: 100px;
+  padding-top: 50px;
 }
 
 #wrap #nav .menu li.sns .icon {
@@ -792,8 +792,8 @@ a {
   background-repeat: no-repeat;
   background-position: 10% 90%;
   opacity: 0;
-  -webkit-transform: translate(17%, -15%);
-          transform: translate(17%, -15%);
+  -webkit-transform: translate(10%, -15%);
+          transform: translate(10%, -15%);
   -webkit-transition: opacity 2s ease-out, -webkit-transform 1.5s ease-out;
   transition: opacity 2s ease-out, -webkit-transform 1.5s ease-out;
   transition: opacity 2s ease-out, transform 1.5s ease-out;
