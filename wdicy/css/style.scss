@@ -46,7 +46,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     height: 100vh;
     height: var(--app-height, 100vh);
@@ -246,7 +246,7 @@
         h5 {
           @include font($spoqa, bold, 22px, normal);
           color: $white;
-          margin-bottom: 1%;
+          margin-bottom: 20px;
         }
         p {
           @include font($spoqa, normal, 18px, normal);
@@ -254,9 +254,9 @@
           color: $white;
           text-align: justify;
           letter-spacing: -1px;
-          margin-bottom: 1%;
+          margin-bottom: 20px;
           &:last-of-type {
-            margin-bottom: 2%;
+            margin-bottom: 40px;
           }
         }
         button {
@@ -294,14 +294,33 @@
         div {
           width: 100%;
           height: 100%;
-          background-image: url(../images/profile_daisy.png);
-          background-size: 60.75%;
-          background-repeat: no-repeat;
-          background-position: 106% -21%;
+          position: relative;
+          &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url(../images/profile_daisy.png);
+            background-size: 60.75%;
+            background-repeat: no-repeat;
+            background-position: 106% -21%;
+            opacity: 0;
+            transform: translate(-30%, 10%);
+            transition: opacity 1.5s ease-out,
+                        transform 2s ease-out;
+          }
+          &:hover{
+            &::after{
+              opacity: 1;
+              transform: translate(0%, 0%);
+            }
+          }
         }
         img {
           width: 73%;
           margin-top: 11%;
+          position: relative;
+          z-index: 1;
         }
       }
       article {
@@ -467,15 +486,33 @@
         > div {
           width: 100%;
           height: 100%;
-          background-image: url(../images/rose.png);
-          background-size: 50%;
-          background-repeat: no-repeat;
-          background-position: 10% 90%;
           position: relative;
           display: flex;
           justify-content: center;
           align-items: center;
+          &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url(../images/rose.png);
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: 10% 90%;
+            opacity: 0;
+            transform: translate(25%, -15%);
+            transition: opacity 2s ease-out,
+                        transform 1.5s ease-out;
+          }
+          &:hover{
+            &::after{
+              opacity: 1;
+              transform: translate(0%, 0%);
+            }
+          }
           img {
+            position: relative;
+            z-index: 1;
             &.cd {
               width: 65%;
               &.active {
@@ -618,12 +655,30 @@
           position: relative;
           display: block;
           padding: 20px 0 40px 10px;
-          background-image: url(../images/video_daisy.png);
-          background-size: 50%;
-          background-repeat: no-repeat;
-          background-position: 100% 100%;
+          &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url(../images/video_daisy.png);
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            opacity: 0;
+            transform: translate(-35%, -25%);
+            transition: opacity 1s ease-out,
+                        transform 1.5s ease-out;
+          }
+          &:hover{
+            &::after{
+              opacity: 1;
+              transform: translate(0%, 0%);
+            }
+          }
           figure {
             width: 55%;
+            position: relative;
+            z-index: 1;
             > img {
               width: 100%;
             }
@@ -631,12 +686,12 @@
               position: absolute;
               top: 0px;
               left: 0px;
-              width: 55%;
-              height: 88%;
+              width: 100%;
+              height: 100%;
               background-color: rgba($black, 0.5);
               @include font($bodoni, bold, 1.5vw, normal);
               text-align: center;
-              padding-top: 19%;
+              padding-top: 30%;
               box-sizing: border-box;
               color: $white;
               letter-spacing: -1px;
@@ -650,6 +705,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            z-index: 1;
           }
           &:hover {
             figure {

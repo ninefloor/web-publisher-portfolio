@@ -118,7 +118,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
   height: 100vh;
   height: var(--app-height, 100vh);
@@ -409,7 +409,7 @@ a {
   font-size: 22px;
   font-style: normal;
   color: #f2ebdc;
-  margin-bottom: 1%;
+  margin-bottom: 20px;
 }
 
 #wrap .sec2 .contain article p {
@@ -421,11 +421,11 @@ a {
   color: #f2ebdc;
   text-align: justify;
   letter-spacing: -1px;
-  margin-bottom: 1%;
+  margin-bottom: 20px;
 }
 
 #wrap .sec2 .contain article p:last-of-type {
-  margin-bottom: 2%;
+  margin-bottom: 40px;
 }
 
 #wrap .sec2 .contain article button {
@@ -487,15 +487,41 @@ a {
 #wrap .sec3 .contain figure div {
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+#wrap .sec3 .contain figure div::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url(../images/profile_daisy.png);
   background-size: 60.75%;
   background-repeat: no-repeat;
   background-position: 106% -21%;
+  opacity: 0;
+  -webkit-transform: translate(-30%, 10%);
+          transform: translate(-30%, 10%);
+  -webkit-transition: opacity 1.5s ease-out, -webkit-transform 2s ease-out;
+  transition: opacity 1.5s ease-out, -webkit-transform 2s ease-out;
+  transition: opacity 1.5s ease-out, transform 2s ease-out;
+  transition: opacity 1.5s ease-out, transform 2s ease-out, -webkit-transform 2s ease-out;
+}
+
+#wrap .sec3 .contain figure div:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 
 #wrap .sec3 .contain figure img {
   width: 73%;
   margin-top: 11%;
+  position: relative;
+  z-index: 1;
 }
 
 #wrap .sec3 .contain article {
@@ -740,10 +766,6 @@ a {
 #wrap .sec4 .contain figure > div {
   width: 100%;
   height: 100%;
-  background-image: url(../images/rose.png);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 10% 90%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,6 +776,38 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#wrap .sec4 .contain figure > div::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../images/rose.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 10% 90%;
+  opacity: 0;
+  -webkit-transform: translate(25%, -15%);
+          transform: translate(25%, -15%);
+  -webkit-transition: opacity 2s ease-out, -webkit-transform 1.5s ease-out;
+  transition: opacity 2s ease-out, -webkit-transform 1.5s ease-out;
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+  transition: opacity 2s ease-out, transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+}
+
+#wrap .sec4 .contain figure > div:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+}
+
+#wrap .sec4 .contain figure > div img {
+  position: relative;
+  z-index: 1;
 }
 
 #wrap .sec4 .contain figure > div img.cd {
@@ -972,14 +1026,39 @@ a {
   position: relative;
   display: block;
   padding: 20px 0 40px 10px;
+}
+
+#wrap .sec6 .contain > div.mv a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url(../images/video_daisy.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
+  opacity: 0;
+  -webkit-transform: translate(-35%, -25%);
+          transform: translate(-35%, -25%);
+  -webkit-transition: opacity 1s ease-out, -webkit-transform 1.5s ease-out;
+  transition: opacity 1s ease-out, -webkit-transform 1.5s ease-out;
+  transition: opacity 1s ease-out, transform 1.5s ease-out;
+  transition: opacity 1s ease-out, transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+}
+
+#wrap .sec6 .contain > div.mv a:hover::after {
+  opacity: 1;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
 }
 
 #wrap .sec6 .contain > div.mv a figure {
   width: 55%;
+  position: relative;
+  z-index: 1;
 }
 
 #wrap .sec6 .contain > div.mv a figure > img {
@@ -990,15 +1069,15 @@ a {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 55%;
-  height: 88%;
+  width: 100%;
+  height: 100%;
   background-color: rgba(64, 54, 54, 0.5);
   font-family: "Bodoni Moda", serif;
   font-weight: bold;
   font-size: 1.5vw;
   font-style: normal;
   text-align: center;
-  padding-top: 19%;
+  padding-top: 30%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #f2ebdc;
@@ -1014,6 +1093,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 #wrap .sec6 .contain > div.mv a:hover figure figcaption {
