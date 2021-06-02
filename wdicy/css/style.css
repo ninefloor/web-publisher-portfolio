@@ -291,7 +291,7 @@ a {
   text-transform: uppercase;
 }
 
-#wrap .sec1 h4.main_title {
+#wrap .sec1 .main_title {
   position: absolute;
   top: 50%;
   left: 2.1%;
@@ -299,7 +299,7 @@ a {
           transform: translateY(-50%);
 }
 
-#wrap .sec1 h4.main_title div span {
+#wrap .sec1 .main_title div span {
   display: block;
   height: 180px;
   font-family: "Bodoni Moda", serif;
@@ -318,7 +318,7 @@ a {
   float: left;
 }
 
-#wrap .sec1 h4.main_title div span:hover {
+#wrap .sec1 .main_title div span:hover {
   -webkit-text-stroke: 0;
   color: #f2ebdc;
 }

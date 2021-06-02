@@ -17,9 +17,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/media.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <!-- lightbox JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
   <script>
     // iOS 100vh 버그 픽스
     const appHeight = () => {
@@ -46,7 +43,6 @@
       alwaysShowNavOnTouchDevices: true
     });
   </script>
-  <script src="./js/app.js"></script>
 </head>
 
 <body>
@@ -88,7 +84,7 @@
           <span>Taeyeon</span>
           <span>The 4th Mini Album</span>
         </div>
-        <h4 class="main_title">
+        <div class="main_title">
           <div>
             <span>What</span>
             <span>Do</span>
@@ -98,7 +94,7 @@
             <span>Call</span>
             <span>You</span>
           </div>
-        </h4>
+        </div>
         <p class="release">2020. 12. 15. 18:00 Release</p>
       </div>
     </section>
@@ -328,16 +324,36 @@
         <h4>Gallery</h4>
         <article>
           <h5 class="ir_su">lightbox gallery</h5>
-          <a href="./images/gallery/1.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/1.png" alt="01"></div></a>
-          <a href="./images/gallery/2.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/2.png" alt="02"></div></a>
-          <a href="./images/gallery/3.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/3.png" alt="03"></div></a>
-          <a href="./images/gallery/4.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/4.png" alt="04"></div></a>
-          <a href="./images/gallery/5.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/5.png" alt="05"></div></a>
-          <a href="./images/gallery/6.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/6.png" alt="06"></div></a>
-          <a href="./images/gallery/7.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/7.png" alt="07"></div></a>
-          <a href="./images/gallery/8.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/8.png" alt="08"></div></a>
-          <a href="./images/gallery/9.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/9.png" alt="09"></div></a>
-          <a href="./images/gallery/10.jpg" data-lightbox="gallery"><div><img src="./images/gallery/thumbnail/10.png" alt="10"></div></a>
+          <a href="./images/gallery/1.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/1.png" alt="01"></div>
+          </a>
+          <a href="./images/gallery/2.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/2.png" alt="02"></div>
+          </a>
+          <a href="./images/gallery/3.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/3.png" alt="03"></div>
+          </a>
+          <a href="./images/gallery/4.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/4.png" alt="04"></div>
+          </a>
+          <a href="./images/gallery/5.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/5.png" alt="05"></div>
+          </a>
+          <a href="./images/gallery/6.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/6.png" alt="06"></div>
+          </a>
+          <a href="./images/gallery/7.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/7.png" alt="07"></div>
+          </a>
+          <a href="./images/gallery/8.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/8.png" alt="08"></div>
+          </a>
+          <a href="./images/gallery/9.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/9.png" alt="09"></div>
+          </a>
+          <a href="./images/gallery/10.jpg" data-lightbox="gallery">
+            <div><img src="./images/gallery/thumbnail/10.png" alt="10"></div>
+          </a>
         </article>
       </div>
     </section>
@@ -350,6 +366,11 @@
       </address>
     </footer>
   </div>
-
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
+
 </html>
