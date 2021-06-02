@@ -70,13 +70,13 @@ function parallax(){
   
   $(window).scroll(function(){
     let windowScroll = $(this).scrollTop();
-    if(windowScroll >= profile.offset().top - $(window).height()/3){
+    if(windowScroll >= profile.offset().top - $(window).height()/2){
       profileImg.addClass("on");
     }
-    if(windowScroll >= track.offset().top - $(window).height()/3){
+    if(windowScroll >= track.offset().top - $(window).height()/2){
       trackImg.addClass("on");
     }
-    if(windowScroll >= video.offset().top - $(window).height()/3){
+    if(windowScroll >= video.offset().top - $(window).height()/2){
       videoImg.addClass("on");
     }
   })
