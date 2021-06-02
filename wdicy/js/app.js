@@ -24,21 +24,20 @@ function title(){
 
 function menu(){
   $(".menu_btn").click(function(e){
-    e.preventDefault();
-    $(this).toggleClass("active");
-    $("#nav").fadeToggle(400);
+    e.preventDefault(); // a 태그 작동 방지
+    $(this).toggleClass("active"); // 클릭 시 버튼 X자로 변경
+    $("#nav").fadeToggle(400); // #nav 표시
   })
   $("#nav>.menu>li>a").click(function(e){
-    e.preventDefault();
-    let section = $("#wrap>section");
-    let target = $(this).closest("li");
-    let index = target.index();
-    let sectionIdx = section.eq(index+1);
-    let offset = sectionIdx.offset().top;
-    console.log(offset);
-    $("html,body").animate({scrollTop:offset},600,"swing");
-    $(".menu_btn").toggleClass("active");
-    $("#nav").fadeOut(400);
+    e.preventDefault(); // a 태그 작동 방지
+    let section = $("#wrap>section"); // 섹션 변수 설정
+    let target = $(this).closest("li"); // 클릭한 a 태그 부모요소인 li 변수 설정 (eq, index 작동을 위함)
+    let index = target.index(); // 인덱스 받아오기
+    let sectionIdx = section.eq(index+1); // 인덱스에 따른 섹션 인덱스 설정
+    let offset = sectionIdx.offset().top; // 섹션 별 오프셋 탑 값 변수 설정
+    $("html,body").animate({scrollTop:offset},800,"swing"); // 스크롤 동작
+    $(".menu_btn").toggleClass("active"); // 메뉴 버튼 원 상태 복귀
+    $("#nav").fadeOut(400); // #nav 사라지기
   })
 }
 
