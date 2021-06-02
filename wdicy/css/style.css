@@ -511,7 +511,7 @@ a {
   transition: opacity 1.5s ease-out, transform 2s ease-out, -webkit-transform 2s ease-out;
 }
 
-#wrap .sec3 .contain figure div:hover::after {
+#wrap .sec3 .contain figure div.on::after {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
@@ -799,7 +799,7 @@ a {
   transition: opacity 2s ease-out, transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
 }
 
-#wrap .sec4 .contain figure > div:hover::after {
+#wrap .sec4 .contain figure > div.on::after {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
@@ -1049,7 +1049,7 @@ a {
   transition: opacity 1s ease-out, transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
 }
 
-#wrap .sec6 .contain > div.mv a:hover::after {
+#wrap .sec6 .contain > div.mv a.on::after {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);

@@ -309,7 +309,7 @@
             transition: opacity 1.5s ease-out,
                         transform 2s ease-out;
           }
-          &:hover{
+          &.on{
             &::after{
               opacity: 1;
               transform: translate(0%, 0%);
@@ -504,7 +504,7 @@
             transition: opacity 2s ease-out,
                         transform 1.5s ease-out;
           }
-          &:hover{
+          &.on{
             &::after{
               opacity: 1;
               transform: translate(0%, 0%);
@@ -669,7 +669,7 @@
             transition: opacity 1s ease-out,
                         transform 1.5s ease-out;
           }
-          &:hover{
+          &.on{
             &::after{
               opacity: 1;
               transform: translate(0%, 0%);
