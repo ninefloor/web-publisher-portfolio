@@ -3,6 +3,7 @@ $(document).ready(function(){
   menu();
   track();
   parallax();
+  rowScroll();
 })
 
 // lightbox 설정
@@ -79,5 +80,13 @@ function parallax(){
     if(windowScroll >= video.offset().top - $(window).height()/2){
       videoImg.addClass("on");
     }
+  })
+}
+
+function rowScroll(){
+  let scroll = $(".scroll>span");
+  let docuHeight = $(document).outerHeight();
+  $(window).scroll(function(){
+    console.log(docuHeight);
   })
 }
