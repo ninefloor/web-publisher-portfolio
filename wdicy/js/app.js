@@ -1,6 +1,6 @@
 $(document).ready(function(){
   title();
-  menuBtn();
+  menu();
   track();
   parallax();
 })
@@ -22,11 +22,23 @@ function title(){
   })
 }
 
-function menuBtn(){
+function menu(){
   $(".menu_btn").click(function(e){
     e.preventDefault();
     $(this).toggleClass("active");
     $("#nav").fadeToggle(400);
+  })
+  $("#nav>.menu>li>a").click(function(e){
+    e.preventDefault();
+    let section = $("#wrap>section");
+    let target = $(this).closest("li");
+    let index = target.index();
+    let sectionIdx = section.eq(index+1);
+    let offset = sectionIdx.offset().top;
+    console.log(offset);
+    $("html,body").animate({scrollTop:offset},600,"swing");
+    $(".menu_btn").toggleClass("active");
+    $("#nav").fadeOut(400);
   })
 }
 
