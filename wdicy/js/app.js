@@ -3,7 +3,7 @@ $(document).ready(function(){
   menu();
   track();
   parallax();
-  rowScroll();
+  
 })
 
 // lightbox 설정
@@ -20,6 +20,7 @@ function title(){
   $(".title").click(function(){
     $(this).stop().fadeOut(500);
     $("#wrap").fadeIn(500);
+    rowScroll();
   })
 }
 
@@ -71,13 +72,13 @@ function parallax(){
   
   $(window).scroll(function(){
     let windowScroll = $(this).scrollTop();
-    if(windowScroll >= profile.offset().top - $(window).height()/2){
+    if(windowScroll >= profile.offset().top - $(window).height()/3){
       profileImg.addClass("on");
     }
-    if(windowScroll >= track.offset().top - $(window).height()/2){
+    if(windowScroll >= track.offset().top - $(window).height()/3){
       trackImg.addClass("on");
     }
-    if(windowScroll >= video.offset().top - $(window).height()/2){
+    if(windowScroll >= video.offset().top - $(window).height()/3){
       videoImg.addClass("on");
     }
   })
@@ -85,8 +86,11 @@ function parallax(){
 
 function rowScroll(){
   let scroll = $(".scroll>span");
-  let docuHeight = $(document).outerHeight();
   $(window).scroll(function(){
-    console.log(docuHeight);
+    let docHeight = $("body").height();
+    let windowScroll = $(this).scrollTop();
+    let windowHeight = $(window).height();
+    let calcHeight = windowScroll / (docHeight-windowHeight) * 100
+    scroll.css({width : calcHeight+"%"});
   })
 }

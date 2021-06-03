@@ -88,6 +88,8 @@ body {
   width: 0%;
   height: 100%;
   background-color: #f2ebdc;
+  -webkit-box-shadow: 0 0 3px rgba(64, 54, 54, 0.3);
+          box-shadow: 0 0 3px rgba(64, 54, 54, 0.3);
 }
 
 .videoback {
