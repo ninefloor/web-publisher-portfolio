@@ -565,6 +565,7 @@ body {
 
 #wrap .sec2 .physical article img {
   width: 85%;
+  max-width: 1389px;
 }
 
 #wrap .sec3 {
@@ -1039,11 +1040,15 @@ body {
 
 #wrap .sec4 .contain figure > div img.cd {
   width: 65%;
+  -webkit-animation: rotate360 12s linear infinite;
+          animation: rotate360 12s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 #wrap .sec4 .contain figure > div img.cd.active {
-  -webkit-animation: rotate360 12s linear infinite;
-          animation: rotate360 12s linear infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 
 #wrap .sec4 .contain figure > div img:last-of-type {

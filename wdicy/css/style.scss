@@ -363,6 +363,7 @@ body{
         }
         img{
           width: 85%;
+          max-width: 1389px;
         }
       }
     }
@@ -683,8 +684,10 @@ body{
             z-index: 1;
             &.cd {
               width: 65%;
+              animation: rotate360 12s linear infinite;
+              animation-play-state: paused;
               &.active {
-                animation: rotate360 12s linear infinite;
+                animation-play-state: running;
               }
             }
             &:last-of-type {
