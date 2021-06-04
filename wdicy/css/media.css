@@ -350,8 +350,8 @@
     width: 70%;
   }
   #wrap .sec4 .contain article ul.track_list li h5 {
-    font-size: 4vw;
-    margin-bottom: 22px;
+    font-size: 5vw;
+    margin-bottom: 24px;
   }
   #wrap .sec4 .contain article ul.track_list li p {
     font-size: 16px;
@@ -368,7 +368,7 @@
     width: 70%;
   }
   #wrap .sec5 .contain article {
-    width: 70%;
+    width: 90%;
   }
   #wrap .sec5 .contain article div.line {
     left: 41%;
@@ -383,7 +383,7 @@
     left: 40%;
   }
   #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span {
-    font-size: 18px;
+    font-size: 16px;
   }
   #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
     font-size: 12px;
@@ -516,116 +516,119 @@
   #wrap .sec2 .physical article img {
     width: 90%;
   }
-  .sec3 .contain h4 {
+  #wrap .sec3 .contain h4 {
     width: 75%;
     font-size: 12vw;
   }
-  .sec3 .contain figure {
+  #wrap .sec3 .contain figure {
     width: 75%;
   }
-  .sec3 .contain article {
+  #wrap .sec3 .contain article {
     width: 75%;
   }
-  .sec3 .contain article ul.profile li span:first-child {
+  #wrap .sec3 .contain article ul.profile li span:first-child {
     display: block;
     width: auto;
     text-align: left;
     font-size: 14px;
   }
-  .sec3 .contain article ul.profile li span:last-child {
+  #wrap .sec3 .contain article ul.profile li span:last-child {
     display: block;
     font-size: 12px;
     margin-left: 2px;
   }
-  .sec4 .contain h4 {
+  #wrap .sec4 .contain h4 {
     width: 75%;
     font-size: 12vw;
   }
-  .sec4 .contain article {
+  #wrap .sec4 .contain article {
     width: 75%;
   }
-  .sec4 .contain article ul.track_list li h5 {
+  #wrap .sec4 .contain article ul.track_list li h5 {
     font-size: 21px;
   }
-  .sec4 .contain article ul.track_list li h5::after {
+  #wrap .sec4 .contain article ul.track_list li h5::after {
     width: 18px;
     height: 18px;
   }
-  .sec4 .contain article ul.track_list li p {
+  #wrap .sec4 .contain article ul.track_list li h5 sub {
+    font-size: 12px;
+  }
+  #wrap .sec4 .contain article ul.track_list li.active h5 sub {
+    font-size: 12px;
+  }
+  #wrap .sec4 .contain article ul.track_list li p {
     font-size: 16px;
   }
-  .sec4 .contain figure {
+  #wrap .sec4 .contain figure {
     width: 75%;
   }
-  .sec5 .contain h4 {
+  #wrap .sec5 .contain h4 {
     width: 75%;
     font-size: 12vw;
   }
-  .sec5 .contain figure {
+  #wrap .sec5 .contain figure {
     width: 75%;
   }
-  .sec5 .contain article {
-    width: 75%;
-  }
-  .sec5 .contain article div.line {
+  #wrap .sec5 .contain article div.line {
     width: 4px;
   }
-  .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(1) {
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(1) {
     font-size: 22px;
   }
-  .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(2) {
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(1) span:nth-of-type(2) {
     font-size: 12px;
   }
-  .sec5 .contain article ul.schedule > li > ul li:nth-of-type(2) {
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(2) {
     width: 12px;
     height: 12px;
   }
-  .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span {
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span {
     font-size: 14px;
   }
-  .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
+  #wrap .sec5 .contain article ul.schedule > li > ul li:nth-of-type(3) span sub {
     font-size: 10px;
   }
-  .sec6 .contain h4 {
+  #wrap .sec6 .contain h4 {
     width: 75%;
     font-size: 12vw;
   }
-  .sec6 .contain > div.mv {
+  #wrap .sec6 .contain > div.mv {
     width: 75%;
   }
-  .sec6 .contain > div.mv a figure figcaption {
+  #wrap .sec6 .contain > div.mv a figure figcaption {
     font-size: 3vw;
   }
-  .sec6 .contain > div.videoclip {
+  #wrap .sec6 .contain > div.videoclip {
     width: 75%;
   }
-  .sec6 .contain > div.videoclip article ul.videolist {
+  #wrap .sec6 .contain > div.videoclip article ul.videolist {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .sec6 .contain > div.videoclip article ul.videolist li {
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li {
     width: 100%;
     margin-bottom: 2%;
   }
-  .sec6 .contain > div.videoclip article ul.videolist li a figure figcaption {
+  #wrap .sec6 .contain > div.videoclip article ul.videolist li a figure figcaption {
     font-size: 7vw;
   }
-  .sec7 {
+  #wrap .sec7 {
     height: auto;
   }
-  .sec7 .contain h4 {
+  #wrap .sec7 .contain h4 {
     width: 75%;
     font-size: 12vw;
   }
-  .sec7 .contain article {
+  #wrap .sec7 .contain article {
     width: 75%;
   }
-  .sec7 .contain article a {
+  #wrap .sec7 .contain article a {
     width: 100%;
   }
-  .sec7 .contain article a:nth-of-type(3n) {
+  #wrap .sec7 .contain article a:nth-of-type(3n) {
     display: none;
   }
 }

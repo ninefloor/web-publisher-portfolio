@@ -388,8 +388,8 @@
           ul.track_list {
             li {
               h5 {
-                font-size: 4vw;
-                margin-bottom: 22px;
+                font-size: 5vw;
+                margin-bottom: 24px;
               }
               p {
                 font-size: 16px;
@@ -413,7 +413,7 @@
           width: 70%;
         }
         article {
-          width: 70%;
+          width: 90%;
           div.line {
             left: 41%;
           }
@@ -436,7 +436,7 @@
                   }
                   &:nth-of-type(3) {
                     span {
-                      font-size: 18px;
+                      font-size: 16px;
                       sub {
                         font-size: 12px;
                       }
@@ -602,141 +602,111 @@
         }
       }
     }
-  }
-  .sec3 {
-    .contain {
-      h4 {
-        width: 75%;
-        font-size: 12vw;
-      }
-      figure {
-        width: 75%;
-      }
-      article {
-        width: 75%;
-        ul.profile {
-          li {
-            span {
-              &:first-child {
-                display: block;
-                width: auto;
-                text-align: left;
-                font-size: 14px;
-              }
-              &:last-child {
-                display: block;
-                font-size: 12px;
-                margin-left: 2px;
-              }
-            }
-          }
+    .sec3 {
+      .contain {
+        h4 {
+          width: 75%;
+          font-size: 12vw;
         }
-      }
-    }
-  }
-  .sec4 {
-    .contain {
-      h4 {
-        width: 75%;
-        font-size: 12vw;
-      }
-      article {
-        width: 75%;
-        ul.track_list {
-          li {
-            h5 {
-              font-size: 21px;
-              &::after {
-                width: 18px;
-                height: 18px;
-              }
-            }
-            p {
-              font-size: 16px;
-            }
-          }
+        figure {
+          width: 75%;
         }
-      }
-      figure {
-        width: 75%;
-      }
-    }
-  }
-  .sec5 {
-    .contain {
-      h4 {
-        width: 75%;
-        font-size: 12vw;
-      }
-      figure {
-        width: 75%;
-      }
-      article {
-        width: 75%;
-        div.line {
-          width: 4px;
-        }
-        ul.schedule {
-          > li {
-            > ul {
-              li {
-                &:nth-of-type(1) {
-                  span {
-                    &:nth-of-type(1) {
-                      font-size: 22px;
-                    }
-                    &:nth-of-type(2) {
-                      font-size: 12px;
-                    }
-                  }
-                }
-                &:nth-of-type(2) {
-                  width: 12px;
-                  height: 12px;
-                }
-                &:nth-of-type(3) {
-                  span {
-                    font-size: 14px;
-                    sub {
-                      font-size: 10px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  .sec6 {
-    .contain {
-      h4 {
-        width: 75%;
-        font-size: 12vw;
-      }
-      > div.mv {
-        width: 75%;
-        a {
-          figure {
-            figcaption {
-              font-size: 3vw;
-            }
-          }
-        }
-      }
-      > div.videoclip {
-        width: 75%;
         article {
-          ul.videolist {
-            flex-direction: column;
+          width: 75%;
+          ul.profile {
             li {
-              width: 100%;
-              margin-bottom: 2%;
-              a {
-                figure {
-                  figcaption {
-                    font-size: 7vw;
+              span {
+                &:first-child {
+                  display: block;
+                  width: auto;
+                  text-align: left;
+                  font-size: 14px;
+                }
+                &:last-child {
+                  display: block;
+                  font-size: 12px;
+                  margin-left: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .sec4 {
+      .contain {
+        h4 {
+          width: 75%;
+          font-size: 12vw;
+        }
+        article {
+          width: 75%;
+          ul.track_list {
+            li {
+              h5 {
+                font-size: 21px;
+                &::after {
+                  width: 18px;
+                  height: 18px;
+                }
+                sub{
+                  font-size: 12px;
+                }
+              }
+              &.active{
+                h5 sub{
+                  font-size: 12px;
+                }
+              }
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        figure {
+          width: 75%;
+        }
+      }
+    }
+    .sec5 {
+      .contain {
+        h4 {
+          width: 75%;
+          font-size: 12vw;
+        }
+        figure {
+          width: 75%;
+        }
+        article {
+          div.line {
+            width: 4px;
+          }
+          ul.schedule {
+            > li {
+              > ul {
+                li {
+                  &:nth-of-type(1) {
+                    span {
+                      &:nth-of-type(1) {
+                        font-size: 22px;
+                      }
+                      &:nth-of-type(2) {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+                  &:nth-of-type(2) {
+                    width: 12px;
+                    height: 12px;
+                  }
+                  &:nth-of-type(3) {
+                    span {
+                      font-size: 14px;
+                      sub {
+                        font-size: 10px;
+                      }
+                    }
                   }
                 }
               }
@@ -745,20 +715,57 @@
         }
       }
     }
-  }
-  .sec7 {
-    height: auto;
-    .contain {
-      h4 {
-        width: 75%;
-        font-size: 12vw;
+    .sec6 {
+      .contain {
+        h4 {
+          width: 75%;
+          font-size: 12vw;
+        }
+        > div.mv {
+          width: 75%;
+          a {
+            figure {
+              figcaption {
+                font-size: 3vw;
+              }
+            }
+          }
+        }
+        > div.videoclip {
+          width: 75%;
+          article {
+            ul.videolist {
+              flex-direction: column;
+              li {
+                width: 100%;
+                margin-bottom: 2%;
+                a {
+                  figure {
+                    figcaption {
+                      font-size: 7vw;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
-      article {
-        width: 75%;
-        a {
-          width: 100%;
-          &:nth-of-type(3n) {
-            display: none;
+    }
+    .sec7 {
+      height: auto;
+      .contain {
+        h4 {
+          width: 75%;
+          font-size: 12vw;
+        }
+        article {
+          width: 75%;
+          a {
+            width: 100%;
+            &:nth-of-type(3n) {
+              display: none;
+            }
           }
         }
       }
