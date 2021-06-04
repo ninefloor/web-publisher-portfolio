@@ -63,6 +63,7 @@ function track() {
       $(".track_list>li>h5").removeClass("active");
       $(this).addClass("active");
       $(this).find("h5").addClass("active");
+      $("img.cd").addClass("active");
       track[0].pause();
       track[1].pause();
       track[2].pause();
@@ -75,9 +76,11 @@ function track() {
       track[trackIdx].play();
     } else if (listState == true && playState == true) {
       $(this).find("h5").removeClass("active");
+      $("img.cd").removeClass("active");
       track[trackIdx].pause();
     } else if (listState == true && playState == false) {
       $(this).find("h5").addClass("active");
+      $("img.cd").addClass("active");
       track[0].pause();
       track[1].pause();
       track[2].pause();
