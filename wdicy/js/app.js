@@ -3,6 +3,7 @@ $(document).ready(function () {
   menu();
   track();
   parallax();
+  physical();
 });
 
 // lightbox 설정
@@ -126,4 +127,21 @@ function rowScroll() {
     let calcHeight = (windowScroll / (docHeight - windowHeight)) * 100;
     scroll.css({ width: calcHeight + "%" });
   });
+}
+
+function physical(e){
+  
+  let btn = $(".sec2>.contain>.album>button");
+  let closeBtn = $(".sec2>.physical>article>.close_btn");
+  let layer = $(".sec2>.physical");
+
+  btn.click(function(){
+    layer.fadeIn(500);
+  });
+
+  closeBtn.click(function(e){
+    e.preventDefault();
+    layer.fadeOut(500);
+  });
+
 }
