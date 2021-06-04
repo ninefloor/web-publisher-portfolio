@@ -496,7 +496,7 @@ body {
   text-align: center;
 }
 
-#wrap .sec2 .physical article h5 {
+#wrap .sec2 .physical article h4 {
   width: 100%;
   font-family: "Bodoni Moda", serif;
   font-size: 71px;
@@ -714,6 +714,110 @@ body {
   background-color: #b1bf9b;
   border-radius: 70px;
   text-indent: 10px;
+  cursor: pointer;
+}
+
+#wrap .sec3 .disco {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background: rgba(64, 54, 54, 0.9);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#wrap .sec3 .disco article {
+  width: 90%;
+  min-height: 83vh;
+  position: relative;
+  background-color: #b1bf9b;
+  margin: 80px auto;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrap .sec3 .disco article h4 {
+  width: 100%;
+  font-family: "Bodoni Moda", serif;
+  font-size: 71px;
+  font-weight: 700;
+  font-style: italic;
+  color: #f2ebdc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#wrap .sec3 .disco article .close_btn {
+  display: block;
+  position: absolute;
+  width: 60px;
+  top: 72px;
+  right: 3%;
+}
+
+#wrap .sec3 .disco article .close_btn span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #f2ebdc;
+  margin-bottom: 11px;
+}
+
+#wrap .sec3 .disco article .close_btn span:nth-child(1) {
+  -webkit-transform: translateY(15px) rotate(-45deg);
+          transform: translateY(15px) rotate(-45deg);
+}
+
+#wrap .sec3 .disco article .close_btn span:nth-child(2) {
+  opacity: 0;
+}
+
+#wrap .sec3 .disco article .close_btn span:nth-child(3) {
+  -webkit-transform: translateY(-15px) rotate(45deg);
+          transform: translateY(-15px) rotate(45deg);
+  margin: 0;
+}
+
+#wrap .sec3 .disco article ul.disco_list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrap .sec3 .disco article ul.disco_list li {
+  width: 220px;
+  margin: 0 7px 20px 7px;
+}
+
+#wrap .sec3 .disco article ul.disco_list li img {
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#wrap .sec3 .disco article ul.disco_list li span {
+  display: block;
+  width: 100%;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+}
+
+#wrap .sec3 .disco article ul.disco_list li span:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 #wrap .sec4 {

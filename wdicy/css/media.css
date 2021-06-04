@@ -107,6 +107,12 @@
   #wrap .sec3 .contain article ul.profile li span:last-child {
     font-size: 2.7vw;
   }
+  #wrap .sec3 .disco article h4 {
+    font-size: 9vw;
+  }
+  #wrap .sec3 .disco article .close_btn {
+    top: 10vw;
+  }
   #wrap .sec4 {
     height: auto;
   }
@@ -332,6 +338,10 @@
   #wrap .sec3 .contain article ul.profile li span:last-child {
     font-size: 2.4vw;
   }
+  #wrap .sec3 .disco article .close_btn {
+    width: 10%;
+    right: 5%;
+  }
   #wrap .sec4 .contain h4 {
     width: 70%;
     font-size: 9vw;
@@ -436,6 +446,12 @@
   }
 }
 
+@media (max-width: 560px) {
+  #wrap .sec3 .disco article ul.disco_list li {
+    width: 90%;
+  }
+}
+
 @media (max-width: 480px) {
   #wrap .menu_btn {
     width: 20px;
@@ -491,7 +507,7 @@
   #wrap .sec2 .physical article {
     width: 80%;
   }
-  #wrap .sec2 .physical article h5 {
+  #wrap .sec2 .physical article h4 {
     font-size: 12vw;
   }
   #wrap .sec2 .physical article .close_btn {

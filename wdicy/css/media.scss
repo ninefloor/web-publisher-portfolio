@@ -128,6 +128,16 @@
           }
         }
       }
+      .disco{
+        article{
+          h4{
+            font-size: 9vw;
+          }
+          .close_btn{
+            top: 10vw;
+          }
+        }
+      }
     }
     .sec4 {
       height: auto;
@@ -358,6 +368,14 @@
           }
         }
       }
+      .disco{
+        article{
+          .close_btn{
+            width: 10%;
+            right: 5%;
+          }
+        }
+      }
     }
     .sec4 {
       .contain {
@@ -494,6 +512,22 @@
   }
 }
 
+@media (max-width: 560px) {
+  #wrap{
+    .sec3{
+      .disco{
+        article{
+          ul.disco_list{
+            li{
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   #wrap {
     .menu_btn {
@@ -556,7 +590,7 @@
       .physical {
         article{
           width: 80%;
-          h5 {
+          h4 {
             font-size: 12vw;
           }
           .close_btn {

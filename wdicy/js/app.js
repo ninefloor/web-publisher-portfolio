@@ -4,6 +4,7 @@ $(document).ready(function () {
   track();
   parallax();
   physical();
+  disco();
 });
 
 // lightbox 설정
@@ -129,11 +130,28 @@ function rowScroll() {
   });
 }
 
-function physical(e){
+function physical(){
   
   let btn = $(".sec2>.contain>.album>button");
   let closeBtn = $(".sec2>.physical>article>.close_btn");
   let layer = $(".sec2>.physical");
+
+  btn.click(function(){
+    layer.fadeIn(500);
+  });
+
+  closeBtn.click(function(e){
+    e.preventDefault();
+    layer.fadeOut(500);
+  });
+
+}
+
+function disco(){
+  
+  let btn = $(".sec3>.contain>article>button");
+  let closeBtn = $(".sec3>.disco>article>.close_btn");
+  let layer = $(".sec3>.disco");
 
   btn.click(function(){
     layer.fadeIn(500);
