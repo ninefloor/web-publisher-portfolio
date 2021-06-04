@@ -18,11 +18,21 @@ lightbox.option({
 });
 
 function title() {
-  $(".title").click(function () {
-    $(this).stop().fadeOut(500);
-    $("#wrap").fadeIn(500);
-    rowScroll();
-  });
+  let agent = navigator.userAgent.toLowerCase();
+  if (
+    (navigator.appName == "Netscape" &&
+      navigator.userAgent.search("Trident") != -1) ||
+    agent.indexOf("msie") != -1
+  ) {
+    $(".title>.alert").show();
+    return;
+  } else {
+    $(".title").click(function () {
+      $(this).stop().fadeOut(500);
+      $("#wrap").fadeIn(500);
+      rowScroll();
+    });
+  }
 }
 
 function menu() {
@@ -130,36 +140,32 @@ function rowScroll() {
   });
 }
 
-function physical(){
-  
+function physical() {
   let btn = $(".sec2>.contain>.album>button");
   let closeBtn = $(".sec2>.physical>article>.close_btn");
   let layer = $(".sec2>.physical");
 
-  btn.click(function(){
+  btn.click(function () {
     layer.fadeIn(500);
   });
 
-  closeBtn.click(function(e){
+  closeBtn.click(function (e) {
     e.preventDefault();
     layer.fadeOut(500);
   });
-
 }
 
-function disco(){
-  
+function disco() {
   let btn = $(".sec3>.contain>article>button");
   let closeBtn = $(".sec3>.disco>article>.close_btn");
   let layer = $(".sec3>.disco");
 
-  btn.click(function(){
+  btn.click(function () {
     layer.fadeIn(500);
   });
 
-  closeBtn.click(function(e){
+  closeBtn.click(function (e) {
     e.preventDefault();
     layer.fadeOut(500);
   });
-
 }
