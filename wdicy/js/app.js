@@ -73,8 +73,10 @@ function track() {
     if (listState == false && playState == false) {
       $(".track_list>li").removeClass("active");
       $(".track_list>li>h5").removeClass("active");
+      $(".track_list>li>p").slideUp(300, "swing");
       $(this).addClass("active");
       $(this).find("h5").addClass("active");
+      $(this).find("p").slideDown(300, "swing");
       $("img.cd").addClass("active");
       track[0].pause();
       track[1].pause();
