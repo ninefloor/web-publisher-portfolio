@@ -63,6 +63,7 @@ a {
   text-indent: -9999px;
 }
 
+/* 스크롤바 제거 */
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -72,6 +73,7 @@ body {
   display: none;
 }
 
+/* 가로 스크롤바 */
 .scroll {
   width: 100%;
   height: 5px;
@@ -92,6 +94,7 @@ body {
           box-shadow: 0 0 3px rgba(64, 54, 54, 0.3);
 }
 
+/* 동영상 배경 */
 .videoback {
   width: 100%;
   height: 100vh;
@@ -109,6 +112,7 @@ body {
   width: 100%;
 }
 
+/* 타이틀 섹션 */
 .title {
   cursor: pointer;
   position: relative;
@@ -151,6 +155,7 @@ body {
   font-style: normal;
 }
 
+/* 컨테이너 기본 속성 */
 .contain {
   width: 100%;
   max-width: 1920px;
@@ -168,6 +173,7 @@ body {
 }
 
 #wrap #nav {
+  /* 네비게이션 */
   display: none;
   position: fixed;
   top: 0;
@@ -277,6 +283,7 @@ body {
 }
 
 #wrap .menu_btn {
+  /* 햄버거 메뉴 */
   display: block;
   position: fixed;
   top: 4.7%;
@@ -321,6 +328,7 @@ body {
 }
 
 #wrap .sec1 {
+  /* 메인 섹션 */
   width: 100%;
   height: 100vh;
   height: var(--app-height, 100vh);
@@ -390,6 +398,7 @@ body {
 }
 
 #wrap .sec2 {
+  /* 앨범 섹션 */
   width: 100%;
   height: 100vh;
   background: rgba(64, 54, 54, 0.7);
@@ -570,6 +579,7 @@ body {
 }
 
 #wrap .sec3 {
+  /* 프로필 섹션 */
   width: 100%;
   height: 100vh;
   background-color: #f2ebdc;
@@ -848,6 +858,7 @@ body {
 }
 
 #wrap .sec4 {
+  /* 트랙 섹션 */
   width: 100%;
   height: 100vh;
   background-color: rgba(64, 54, 54, 0.7);
@@ -1057,6 +1068,7 @@ body {
 }
 
 #wrap .sec5 {
+  /* 프로모션 섹션 */
   width: 100%;
   height: 90vh;
   background-color: #b1bf9b;
@@ -1208,6 +1220,7 @@ body {
 }
 
 #wrap .sec6 {
+  /* 비디오 섹션 */
   width: 100%;
   height: 100vh;
   background-color: rgba(64, 54, 54, 0.7);
@@ -1429,6 +1442,7 @@ body {
 }
 
 #wrap .sec7 {
+  /* 갤러리 섹션 */
   width: 100%;
   height: 100vh;
   background-color: rgba(64, 54, 54, 0.7);
@@ -1504,6 +1518,7 @@ body {
 }
 
 #wrap #footer {
+  /* 푸터 */
   width: 100%;
   height: 200px;
   background-color: #403636;
@@ -1546,6 +1561,7 @@ body {
           box-sizing: border-box;
 }
 
+/* 키프레임 */
 @-webkit-keyframes rotate360 {
   from {
     -webkit-transform: rotate(0deg);
@@ -1556,7 +1572,6 @@ body {
             transform: rotate(359deg);
   }
 }
-
 @keyframes rotate360 {
   from {
     -webkit-transform: rotate(0deg);

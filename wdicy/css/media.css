@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* width 1920px 이상 (고해상도 모니터) */
 @media (min-width: 1920px) {
   #wrap .sec3 .contain article ul.profile li span:first-child {
     font-size: 26.88px;
@@ -7,6 +9,7 @@
   }
 }
 
+/* width 1024px ~ 769px (태블릿, 저해상도 PC) */
 @media (max-width: 1024px) {
   .contain {
     padding: 40px 0;
@@ -269,6 +272,7 @@
   }
 }
 
+/* width 768px ~ 561px (모바일) */
 @media (max-width: 768px) {
   #wrap #nav .menu li a {
     font-size: 10vw;
@@ -446,12 +450,14 @@
   }
 }
 
+/* width 560px ~ 481px (모바일) */
 @media (max-width: 560px) {
   #wrap .sec3 .disco article ul.disco_list li {
     width: 90%;
   }
 }
 
+/* width 480px ~ (모바일) */
 @media (max-width: 480px) {
   #wrap .menu_btn {
     width: 20px;

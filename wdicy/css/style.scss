@@ -1,5 +1,6 @@
 @import "reset.scss";
 
+/* 스크롤바 제거 */
 body{
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -8,6 +9,7 @@ body{
   display: none;
 }
 
+/* 가로 스크롤바 */
 .scroll{
   width: 100%;
   height: 5px;
@@ -24,6 +26,7 @@ body{
   }
 }
 
+/* 동영상 배경 */
 .videoback {
   width: 100%;
   height: 100vh;
@@ -36,6 +39,8 @@ body{
     width: 100%;
   }
 }
+
+/* 타이틀 섹션 */
 .title {
   cursor: pointer;
   position: relative;
@@ -70,6 +75,7 @@ body{
   }
 }
 
+/* 컨테이너 기본 속성 */
 .contain {
   width: 100%;
   max-width: 1920px;
@@ -84,6 +90,7 @@ body{
   display: none;
   position: relative;
   #nav {
+    /* 네비게이션 */
     display: none;
     position: fixed;
     top: 0;
@@ -167,6 +174,7 @@ body{
     }
   }
   .menu_btn {
+    /* 햄버거 메뉴 */
     display: block;
     position: fixed;
     top: 4.7%;
@@ -201,6 +209,7 @@ body{
     }
   }
   .sec1 {
+    /* 메인 섹션 */
     width: 100%;
     height: 100vh;
     height: var(--app-height, 100vh);
@@ -255,6 +264,7 @@ body{
     }
   }
   .sec2 {
+    /* 앨범 섹션 */
     width: 100%;
     height: 100vh;
     background: rgba($black, 0.7);
@@ -370,6 +380,7 @@ body{
     }
   }
   .sec3 {
+    /* 프로필 섹션 */
     width: 100%;
     height: 100vh;
     background-color: $white;
@@ -558,6 +569,7 @@ body{
     }
   }
   .sec4 {
+    /* 트랙 섹션 */
     width: 100%;
     height: 100vh;
     background-color: rgba($black, 0.7);
@@ -704,6 +716,7 @@ body{
     }
   }
   .sec5 {
+    /* 프로모션 섹션 */
     width: 100%;
     height: 90vh;
     background-color: $green;
@@ -803,6 +816,7 @@ body{
     }
   }
   .sec6 {
+    /* 비디오 섹션 */
     width: 100%;
     height: 100vh;
     background-color: rgba($black, 0.7);
@@ -963,6 +977,7 @@ body{
     }
   }
   .sec7 {
+    /* 갤러리 섹션 */
     width: 100%;
     height: 100vh;
     background-color: rgba($black, 0.7);
@@ -1010,6 +1025,7 @@ body{
     }
   }
   #footer{
+    /* 푸터 */
     width: 100%;
     height: 200px;
     background-color: $black;
@@ -1036,6 +1052,7 @@ body{
   }
 }
 
+/* 키프레임 */
 @keyframes rotate360 {
   from {
     transform: rotate(0deg);
