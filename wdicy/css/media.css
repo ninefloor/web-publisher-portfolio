@@ -274,6 +274,9 @@
 
 /* width 768px ~ 561px (모바일) */
 @media (max-width: 768px) {
+  .title .mobile {
+    display: block;
+  }
   #wrap #nav .menu li a {
     font-size: 10vw;
     letter-spacing: -0.8vw;
