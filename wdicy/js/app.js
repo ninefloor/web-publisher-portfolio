@@ -1,3 +1,7 @@
+$(window).on("load", function () {
+  $('.loading').fadeOut(300);
+});
+
 $(document).ready(function () {
   title();
   menu();
@@ -6,7 +10,6 @@ $(document).ready(function () {
   physical();
   disco();
 });
-
 // lightbox 설정
 lightbox.option({
   resizeDuration: 200,
@@ -33,7 +36,7 @@ function title() {
     // 아닐 경우 메인 섹션으로 이동 가능
     $(".title").click(function () {
       $(this).stop().fadeOut(500);
-      $("#wrap").fadeIn(500);
+      $("#wrap").delay(500).fadeIn(500);
       // 가로 스크롤바 기능 시작
       rowScroll();
     });
@@ -125,6 +128,8 @@ function track() {
 // 페럴렉스 기능
 function parallax() {
   // 각 요소 변수 설정
+  let album = $('.sec2');
+  let release = $('.release');
   let profile = $(".sec3");
   let profileImg = $(".sec3>.contain>figure>div");
   let track = $(".sec4");
@@ -135,15 +140,19 @@ function parallax() {
   // 스크롤 시
   $(window).scroll(function () {
     let windowScroll = $(this).scrollTop(); // 현재 위치 변수 설정
-    if (windowScroll >= profile.offset().top - $(window).height() / 3) {
+    let windowH = $(window).height();
+    if (windowScroll >= album.offset().top - windowH / 3) {
+      release.addClass("on");
+    }
+    if (windowScroll >= profile.offset().top - windowH / 3) {
       // 해당 섹션에 도착하면 이미지 표시
       profileImg.addClass("on");
     }
-    if (windowScroll >= track.offset().top - $(window).height() / 3) {
+    if (windowScroll >= track.offset().top - windowH / 3) {
       // 해당 섹션에 도착하면 이미지 표시
       trackImg.addClass("on");
     }
-    if (windowScroll >= video.offset().top - $(window).height() / 3) {
+    if (windowScroll >= video.offset().top - windowH / 3) {
       // 해당 섹션에 도착하면 이미지 표시
       videoImg.addClass("on");
     }
