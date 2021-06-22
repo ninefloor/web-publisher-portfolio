@@ -708,10 +708,15 @@ body {
   opacity: 0;
   -webkit-transform: translate(-30%, 10%);
           transform: translate(-30%, 10%);
-  -webkit-transition: opacity 1.5s ease-out, -webkit-transform 2s ease-out;
-  transition: opacity 1.5s ease-out, -webkit-transform 2s ease-out;
-  transition: opacity 1.5s ease-out, transform 2s ease-out;
-  transition: opacity 1.5s ease-out, transform 2s ease-out, -webkit-transform 2s ease-out;
+  -webkit-transition: opacity 1.5s ease-out,
+ -webkit-transform 2s ease-out;
+  transition: opacity 1.5s ease-out,
+ -webkit-transform 2s ease-out;
+  transition: opacity 1.5s ease-out,
+ transform 2s ease-out;
+  transition: opacity 1.5s ease-out,
+ transform 2s ease-out,
+ -webkit-transform 2s ease-out;
 }
 
 #wrap .sec3 .contain figure div.on::after {
@@ -1096,10 +1101,15 @@ body {
   opacity: 0;
   -webkit-transform: translate(10%, -15%);
           transform: translate(10%, -15%);
-  -webkit-transition: opacity 2s ease-out, -webkit-transform 1.5s ease-out;
-  transition: opacity 2s ease-out, -webkit-transform 1.5s ease-out;
-  transition: opacity 2s ease-out, transform 1.5s ease-out;
-  transition: opacity 2s ease-out, transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+  -webkit-transition: opacity 2s ease-out,
+ -webkit-transform 1.5s ease-out;
+  transition: opacity 2s ease-out,
+ -webkit-transform 1.5s ease-out;
+  transition: opacity 2s ease-out,
+ transform 1.5s ease-out;
+  transition: opacity 2s ease-out,
+ transform 1.5s ease-out,
+ -webkit-transform 1.5s ease-out;
 }
 
 #wrap .sec4 .contain figure > div.on::after {
@@ -1352,10 +1362,15 @@ body {
   opacity: 0;
   -webkit-transform: translate(-35%, -25%);
           transform: translate(-35%, -25%);
-  -webkit-transition: opacity 1s ease-out, -webkit-transform 1.5s ease-out;
-  transition: opacity 1s ease-out, -webkit-transform 1.5s ease-out;
-  transition: opacity 1s ease-out, transform 1.5s ease-out;
-  transition: opacity 1s ease-out, transform 1.5s ease-out, -webkit-transform 1.5s ease-out;
+  -webkit-transition: opacity 1s ease-out,
+ -webkit-transform 1.5s ease-out;
+  transition: opacity 1s ease-out,
+ -webkit-transform 1.5s ease-out;
+  transition: opacity 1s ease-out,
+ transform 1.5s ease-out;
+  transition: opacity 1s ease-out,
+ transform 1.5s ease-out,
+ -webkit-transform 1.5s ease-out;
 }
 
 #wrap .sec6 .contain > div.mv a.on::after {
