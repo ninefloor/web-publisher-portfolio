@@ -6,7 +6,7 @@ $(document).ready(function () {
   title();
   menu();
   track();
-  parallax();
+  scrollDirection();
   physical();
   disco();
 });
@@ -125,8 +125,8 @@ function track() {
   });
 }
 
-// 페럴렉스 기능
-function parallax() {
+// 스크롤 효과
+function scrollDirection() {
   // 각 요소 변수 설정
   let album = $('.sec2');
   let release = $('.release');
@@ -140,9 +140,13 @@ function parallax() {
   // 스크롤 시
   $(window).scroll(function () {
     let windowScroll = $(this).scrollTop(); // 현재 위치 변수 설정
+    console.log(windowScroll);
     let windowH = $(window).height();
-    if (windowScroll >= album.offset().top - windowH / 3) {
+    if (windowScroll < album.offset().top - windowH / 3) {
       release.addClass("on");
+    }
+    if (windowScroll >= album.offset().top - windowH / 3) {
+      release.removeClass("on");
     }
     if (windowScroll >= profile.offset().top - windowH / 3) {
       // 해당 섹션에 도착하면 이미지 표시
