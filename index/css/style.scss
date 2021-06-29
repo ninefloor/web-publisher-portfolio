@@ -25,3 +25,56 @@
     text-align: center;
   }
 }
+
+.sec2{
+  background-color: #45b69c;
+  .profile{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    figure{
+      width: 100%;
+      img{
+        width: 100%;
+        box-shadow: 4px 3px 6px 0 rgba(0, 0, 0, 0.16);
+      }
+    }
+    ul{
+      @include font(28px, bold);
+      color: #fff;
+      li{
+        margin: 20px 0;
+        span{
+          font-size: 24px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+  .introduce{
+    float: left;
+    width: 70%;
+    height: 100%;
+    margin-left: 5%;
+    @include font (24px, normal);
+    line-height: 1.54;
+    letter-spacing: -0.5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    .edu{
+      width: 65%;
+    }
+    .license{
+      width: 35%;
+    }
+    .ability{
+      width: 100%;
+    }
+  }
+}

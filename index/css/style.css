@@ -35,6 +35,24 @@ a {
   text-indent: -9999px;
 }
 
+/* 컨테이너 */
+.contain {
+  width: 84%;
+  height: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* h 태그 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* strong, em */
+strong, em {
+  font-weight: bold;
+}
+
 .sec1 {
   background-color: #5138be;
   position: relative;
@@ -64,4 +82,87 @@ a {
   line-height: 98px;
   letter-spacing: 1.41px;
   text-align: center;
+}
+
+.sec2 {
+  background-color: #45b69c;
+}
+
+.sec2 .profile {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  float: left;
+}
+
+.sec2 .profile figure {
+  width: 100%;
+}
+
+.sec2 .profile figure img {
+  width: 100%;
+  -webkit-box-shadow: 4px 3px 6px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 4px 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.sec2 .profile ul {
+  font-family: "Spoqa Han Sans", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.sec2 .profile ul li {
+  margin: 20px 0;
+}
+
+.sec2 .profile ul li span {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.sec2 .introduce {
+  float: left;
+  width: 70%;
+  height: 100%;
+  margin-left: 5%;
+  font-family: "Spoqa Han Sans", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.54;
+  letter-spacing: -0.5px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sec2 .introduce .edu {
+  width: 65%;
+}
+
+.sec2 .introduce .license {
+  width: 35%;
+}
+
+.sec2 .introduce .ability {
+  width: 100%;
 }

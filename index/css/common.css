@@ -34,3 +34,21 @@ a {
   line-height: 0;
   text-indent: -9999px;
 }
+
+/* 컨테이너 */
+.contain {
+  width: 84%;
+  height: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* h 태그 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* strong, em */
+strong, em {
+  font-weight: bold;
+}
