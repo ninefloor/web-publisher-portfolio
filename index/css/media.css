@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+  .sec1 .back-img {
+    background-size: 70%;
+  }
+  .sec1 p {
+    font-size: 6vw;
+    line-height: 9vw;
+  }
+}

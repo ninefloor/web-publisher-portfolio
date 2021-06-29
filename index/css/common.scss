@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-*{
-  font-family: "Spoqa Han Sans", sans-serif;
-}
 
 /* a 태그 초기화 */
 a{
@@ -41,6 +38,7 @@ a{
 }
 
 @mixin font ($size, $weight){
+  font-family: "Spoqa Han Sans", sans-serif;
   font-size: $size;
   font-weight: $weight;
 }
