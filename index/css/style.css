@@ -412,10 +412,12 @@ body {
   opacity: 0;
   -webkit-transition: opacity .6s ease;
   transition: opacity .6s ease;
+  z-index: -1;
 }
 
 .sec3 .port1 .page_contain .pages.active {
   opacity: 1;
+  z-index: 0;
 }
 
 .sec3 .port1 .page_contain .pages figure {
