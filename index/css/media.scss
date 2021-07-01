@@ -1,4 +1,7 @@
 @media (max-width: 1024px){
+  .contain{
+    height: 90%;
+  }
   .sec1{
     .back-img{
       background-size: 70%;
@@ -6,6 +9,131 @@
     p{
       font-size: 6vw;
       line-height: 9vw;
+    }
+  }
+  .sec2{
+    .profile{
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      justify-content: flex-start;
+      figure{
+        width: 30%;
+      }
+      ul{
+        width: 50%;
+        margin-left: 5%;
+        font-size: 16px;
+        li span{
+          font-size: 14px;
+        }
+      }
+    }
+    .introduce{
+      width: 100%;
+      height: auto;
+      margin: 5% 0 0 0 ;
+      font-size: 16px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      p{
+        width: 50%;
+      }
+      .info{
+        width: 45%;
+        margin-left: 5%;
+        font-size: 16px;
+        .edu{
+          width: 60%;
+        }
+        .license{
+          width: 35%;
+          margin-left: 5%;
+        }
+      }
+      .ability{
+        margin-top: 5%;
+        .box{
+          &.headbox{
+            .tooltip{
+              width: 80%;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .contain{
+    margin: 5% auto;
+  }
+  .sec2{ 
+    .profile{
+      figure{
+        width: 50%;
+      }
+      ul{
+        width: 50%;
+      }
+    }
+    .introduce{
+      p{
+        width: 100%;
+      }
+      .info{
+        width: 100%;
+        margin: 5% 0 0 0;
+        .edu{
+          width: 100%;
+        }
+        .license{
+          width: 100%;
+          margin: 5% 0 0 0;
+        }
+      }
+      .ability{
+        flex-wrap: wrap;
+        .box{
+          width: 45%;
+          margin: 5% 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px){
+  .sec1{
+    .back-img{
+      background-size: contain;
+    }
+  }
+  .sec2{
+    .profile{
+      flex-direction: column;
+      justify-content: center;
+      figure{
+        width: 100%;
+        text-align: center;
+        img{
+          max-width: 280px;
+        }
+      }
+      ul{
+        width: 100%;
+      }
+    }
+    .introduce{
+      .ability{
+        flex-direction: column;
+        align-items: center;
+        .box{
+          width: 90%;
+        }
+      }
     }
   }
 }

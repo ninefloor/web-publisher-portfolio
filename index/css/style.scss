@@ -1,4 +1,7 @@
 @import "common.scss";
+body{
+  font-family: 'Spoqa Han Sans Neo', sans-serif;
+}
 
 .sec1{
   background-color: #5138be;
@@ -31,24 +34,31 @@
   .profile{
     width: 25%;
     height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     float: left;
     figure{
       width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       img{
         width: 100%;
         box-shadow: 4px 3px 6px 0 rgba(0, 0, 0, 0.16);
       }
     }
     ul{
-      @include font(28px, bold);
+      @include font(18px, normal);
       color: #fff;
       li{
         margin: 20px 0;
         span{
-          font-size: 24px;
+          font-size: 16px;
           font-weight: 200;
         }
       }
@@ -67,14 +77,245 @@
     flex-direction: column;
     flex-wrap: no-wrap;
     justify-content: space-between;
-    .edu{
-      width: 65%;
-    }
-    .license{
-      width: 35%;
+    .info{
+      width: 100%;
+      @include font (20px, normal);
+      overflow: hidden;
+      .edu{
+        width: 70%;
+        float: left;
+      }
+      .license{
+        width: 30%;
+        float: left;
+      }
+      ul{
+        li{
+          margin-left: 15px;
+          &:first-of-type{
+            margin-left: 0;
+            margin-bottom: 10px;
+          }
+        }
+      }
     }
     .ability{
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .box{
+        width: 20%;
+        min-width: 150px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: all .7s ease;
+        &.flip{
+          cursor: pointer;
+        }
+        &.active{
+          transform: rotateY(180deg);
+        }
+        &::after{
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+        }
+        .inner{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          &.front{
+            z-index: 2;
+            transform: rotateY(0deg);
+          }
+          &.back{
+            z-index: 1;
+            transform: rotateY(180deg);
+            @include font (14px, normal);
+            line-height: 1.3;
+            ul{
+              width: 100%;
+              height: 100%;
+              padding: 5%;
+              box-sizing: border-box;
+              li{
+                margin: 4% 0;
+              }
+            }
+          }
+        }
+        .icon{
+          position: absolute;
+          top: 5%; left: 5%;
+          height: 30%;
+          background-image: url(../images/icon.png);
+          background-repeat: no-repeat;
+          background-size: 300px;
+        }
+        .tri{
+          position: absolute;
+          bottom: 5%; right: 5%;
+          width: 32px;
+          height: 52px;
+          background-image: url(../images/icon.png);
+          background-repeat: no-repeat;
+          background-size: 430px;
+          background-position-x: 0;
+        }
+        .text{
+          position: absolute;
+          bottom: 5%; left: 5%;
+          @include font(20px, bold);
+          line-height: 1.4;
+        }
+        &.headbox{
+          .inner{
+            background-color: #363636;
+          }
+          h4{
+            @include font(24px, bold);
+            position: absolute;
+            top: 5%; left: 5%;
+          }
+          p{
+            @include font(20px, normal);
+            position: absolute;
+            bottom: 5%; left: 5%;
+          }
+        }
+        &.markup{
+          .inner{
+            background-color: #f16529;
+          }
+          .icon{
+            width: 70px;
+            background-position-x: -24px;
+          }
+        }
+        &.script{
+          .inner{
+            background-color: #be8438;
+          }
+          .icon{
+            width: 80px;
+            background-position-x: -96px;
+          }
+        }
+        &.graphic{
+          .inner{
+            background-color: #003a68;
+          }
+          .icon{
+            width: 120px;
+            background-position-x: -178px;
+          }
+        }
+      }
     }
   }
+}
+
+.sec3{
+  background-color: #363636;
+  .port1{
+    .wdicy{
+      background-color: $wdicy;
+    }
+    .saera{
+      background-color: $saera;
+    }
+    .ninefloor{
+      background-color: $nf;
+    }
+    .page_contain{
+      position: relative;
+      width: 100%;
+      height: 55%;
+      .pages{
+        transition: opacity .6s ease;
+        &.active{
+          opacity: 1;
+        }
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0; left: 0;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        figure{
+          width: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img{
+            width: 90%;
+          }
+        }
+        .page_desc{
+          width: 60%;
+          color: #fff;
+          padding: 2%;
+          box-sizing: border-box;
+          h4{
+            width: 100%;
+            @include font(40px, bold);
+            letter-spacing: -0.7px;
+            margin: 20px 0;
+          }
+          p{
+            width: 100%;
+            @include font(24px, normal);
+            line-height: 1.54;
+            letter-spacing: -0.29px;
+            text-indent: 10px;
+            margin: 20px 0;
+          }
+        }
+      }
+    }
+    .page_selector{
+      width: 100%;
+      height: 40%;
+      position: relative;
+      display: flex;
+      justify-content: start;
+      align-items: flex-end;
+      .page_icon{
+        width: 20%;
+        margin-right: 1%;
+        position: relative;
+        display: block;
+        &::after{
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+        }
+        .inner{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          img{
+            width: 90%;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      h3{
+        position: absolute;
+        bottom: 0; right: 0;
+        @include font(5vw, bold);
+        color: #fff;
+        text-align: right;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+
+.sec4{
+  background-color: #f25c05;
 }

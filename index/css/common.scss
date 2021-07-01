@@ -55,10 +55,23 @@ strong, em{
   font-weight: bold;
 }
 
+/* button */
+button{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 0;
+}
+
+// 변수
+$saera : #543832;
+$wdicy : #b1bf9b;
+$nf : #c09bd8;
 
 // 믹스인
 @mixin font ($size, $weight){
-  font-family: "Spoqa Han Sans", sans-serif;
+  font-family: "Spoqa Han Sans Neo", sans-serif;
   font-size: $size;
   font-weight: $weight;
 }

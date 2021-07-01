@@ -1,9 +1,139 @@
 @media (max-width: 1024px) {
+  .contain {
+    height: 90%;
+  }
   .sec1 .back-img {
     background-size: 70%;
   }
   .sec1 p {
     font-size: 6vw;
     line-height: 9vw;
+  }
+  .sec2 .profile {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .sec2 .profile figure {
+    width: 30%;
+  }
+  .sec2 .profile ul {
+    width: 50%;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+  .sec2 .profile ul li span {
+    font-size: 14px;
+  }
+  .sec2 .introduce {
+    width: 100%;
+    height: auto;
+    margin: 5% 0 0 0;
+    font-size: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sec2 .introduce p {
+    width: 50%;
+  }
+  .sec2 .introduce .info {
+    width: 45%;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+  .sec2 .introduce .info .edu {
+    width: 60%;
+  }
+  .sec2 .introduce .info .license {
+    width: 35%;
+    margin-left: 5%;
+  }
+  .sec2 .introduce .ability {
+    margin-top: 5%;
+  }
+  .sec2 .introduce .ability .box.headbox .tooltip {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contain {
+    margin: 5% auto;
+  }
+  .sec2 .profile figure {
+    width: 50%;
+  }
+  .sec2 .profile ul {
+    width: 50%;
+  }
+  .sec2 .introduce p {
+    width: 100%;
+  }
+  .sec2 .introduce .info {
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+  .sec2 .introduce .info .edu {
+    width: 100%;
+  }
+  .sec2 .introduce .info .license {
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+  .sec2 .introduce .ability {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sec2 .introduce .ability .box {
+    width: 45%;
+    margin: 5% 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sec1 .back-img {
+    background-size: contain;
+  }
+  .sec2 .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sec2 .profile figure {
+    width: 100%;
+    text-align: center;
+  }
+  .sec2 .profile figure img {
+    max-width: 280px;
+  }
+  .sec2 .profile ul {
+    width: 100%;
+  }
+  .sec2 .introduce .ability {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec2 .introduce .ability .box {
+    width: 90%;
   }
 }
