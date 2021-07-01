@@ -64,6 +64,30 @@
       }
     }
   }
+  .sec3{
+    .port1{
+      .page_contain{
+        height: 70%;
+        .pages{
+          flex-direction: column;
+          figure{
+            width: 100%;
+            height: 40%;
+            img{
+              width: auto;
+              height: 100%;
+            }
+          }
+          .page_desc{
+            width: 100%;
+          }
+        }
+      }
+      .page_selector{
+        height: 30%;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px){
@@ -103,6 +127,45 @@
       }
     }
   }
+  .sec3{
+    .port1{
+      .contain{
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .page_contain{
+        width: auto;
+        margin-top: 10px;
+        .pages{
+          height: auto;
+          position: relative;
+          display: none;
+          &.active{
+            display: block;
+          }
+          figure{
+            width: 100%;
+            height: auto;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .page_desc{
+            h4{
+              width: 95%;
+              margin: 20px auto;
+            }
+            p{
+              width: 95%;
+              margin: 20px auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px){
@@ -118,12 +181,13 @@
       figure{
         width: 100%;
         text-align: center;
-        img{
-          max-width: 280px;
-        }
       }
       ul{
         width: 100%;
+        margin-left: 0;
+        li:last-of-type{
+          margin-bottom: 0;
+        }
       }
     }
     .introduce{
@@ -132,6 +196,35 @@
         align-items: center;
         .box{
           width: 90%;
+        }
+      }
+    }
+  }
+  .sec3{
+    .port1{
+      .page_contain{
+        .pages{
+          .page_desc{
+            h4{
+              font-size: 20px;
+            }
+            p{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .page_selector{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .page_icon{
+          width: 30%;
+        }
+        h3{
+          position: relative;
+          margin-top: 10px;
+          margin-left: auto;
+          font-size: 24px;
         }
       }
     }

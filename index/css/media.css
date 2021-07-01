@@ -65,6 +65,29 @@
     width: 80%;
     font-size: 16px;
   }
+  .sec3 .port1 .page_contain {
+    height: 70%;
+  }
+  .sec3 .port1 .page_contain .pages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec3 .port1 .page_contain .pages figure {
+    width: 100%;
+    height: 40%;
+  }
+  .sec3 .port1 .page_contain .pages figure img {
+    width: auto;
+    height: 100%;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc {
+    width: 100%;
+  }
+  .sec3 .port1 .page_selector {
+    height: 30%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -99,6 +122,44 @@
     width: 45%;
     margin: 5% 0;
   }
+  .sec3 .port1 .contain {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .sec3 .port1 .page_contain {
+    width: auto;
+    margin-top: 10px;
+  }
+  .sec3 .port1 .page_contain .pages {
+    height: auto;
+    position: relative;
+    display: none;
+  }
+  .sec3 .port1 .page_contain .pages.active {
+    display: block;
+  }
+  .sec3 .port1 .page_contain .pages figure {
+    width: 100%;
+    height: auto;
+  }
+  .sec3 .port1 .page_contain .pages figure img {
+    width: 100%;
+    height: auto;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc h4 {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc p {
+    width: 95%;
+    margin: 20px auto;
+  }
 }
 
 @media (max-width: 480px) {
@@ -118,11 +179,12 @@
     width: 100%;
     text-align: center;
   }
-  .sec2 .profile figure img {
-    max-width: 280px;
-  }
   .sec2 .profile ul {
     width: 100%;
+    margin-left: 0;
+  }
+  .sec2 .profile ul li:last-of-type {
+    margin-bottom: 0;
   }
   .sec2 .introduce .ability {
     -webkit-box-orient: vertical;
@@ -135,5 +197,27 @@
   }
   .sec2 .introduce .ability .box {
     width: 90%;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc h4 {
+    font-size: 20px;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc p {
+    font-size: 16px;
+  }
+  .sec3 .port1 .page_selector {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sec3 .port1 .page_selector .page_icon {
+    width: 30%;
+  }
+  .sec3 .port1 .page_selector h3 {
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: 24px;
   }
 }
