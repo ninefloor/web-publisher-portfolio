@@ -1,61 +1,62 @@
-@media (max-width: 1024px){
-  .contain{
+/* width 1024px (Tablet) */
+@media (max-width: 1024px) {
+  .contain {
     height: 90%;
   }
-  .sec1{
-    .back-img{
+  .sec1 {
+    .back-img {
       background-size: 70%;
     }
-    p{
+    p {
       font-size: 6vw;
       line-height: 9vw;
     }
   }
-  .sec2{
-    .profile{
+  .sec2 {
+    .profile {
       width: 100%;
       height: auto;
       flex-direction: row;
       justify-content: flex-start;
-      figure{
+      figure {
         width: 30%;
       }
-      ul{
+      ul {
         width: 50%;
         margin-left: 5%;
         font-size: 16px;
-        li span{
+        li span {
           font-size: 14px;
         }
       }
     }
-    .introduce{
+    .introduce {
       width: 100%;
       height: auto;
-      margin: 5% 0 0 0 ;
+      margin: 5% 0 0 0;
       font-size: 16px;
       flex-direction: row;
       flex-wrap: wrap;
-      p{
+      p {
         width: 50%;
       }
-      .info{
+      .info {
         width: 45%;
         margin-left: 5%;
         font-size: 16px;
-        .edu{
+        .edu {
           width: 60%;
         }
-        .license{
+        .license {
           width: 35%;
           margin-left: 5%;
         }
       }
-      .ability{
+      .ability {
         margin-top: 5%;
-        .box{
-          &.headbox{
-            .tooltip{
+        .box {
+          &.headbox {
+            .tooltip {
               width: 80%;
               font-size: 16px;
             }
@@ -64,167 +65,299 @@
       }
     }
   }
-  .sec3{
-    .port1{
-      .page_contain{
-        height: 70%;
-        .pages{
+  .sec3 {
+    .port1 {
+      .page_contain {
+        height: 80%;
+        .pages {
           flex-direction: column;
-          figure{
+          figure {
             width: 100%;
             height: 40%;
-            img{
+            img {
               width: auto;
               height: 100%;
             }
           }
-          .page_desc{
+          .page_desc {
             width: 100%;
+            h4 {
+              width: 95%;
+              margin: 20px auto;
+            }
+            p {
+              width: 95%;
+              margin: 20px auto;
+            }
+            .link {
+              width: 95%;
+              margin: 20px auto 0;
+              a {
+                width: 46.9%;
+                margin: 5px 1%;
+              }
+            }
           }
         }
       }
-      .page_selector{
-        height: 30%;
+    }
+    .port2 {
+      .contain {
+        flex-direction: column;
       }
+      article {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 30%;
+        padding: 20px;
+        box-sizing: border-box;
+        img {
+          width: 15%;
+          margin: 3%;
+        }
+        .desc_contain {
+          width: 50%;
+        }
+        .btn_contain {
+          width: 25%;
+          position: static;
+        }
+      }
+    }
+  }
+  .sec4 {
+    p {
+      font-size: 7vw;
+    }
+    .contect {
+      width: 90%;
     }
   }
 }
 
-@media (max-width: 768px){
-  .contain{
+/* width 768px (Mobile_L) */
+@media (max-width: 768px) {
+  .contain {
     margin: 5% auto;
   }
-  .sec2{ 
-    .profile{
-      figure{
+  .sec2 {
+    .profile {
+      figure {
         width: 50%;
       }
-      ul{
+      ul {
         width: 50%;
       }
     }
-    .introduce{
-      p{
+    .introduce {
+      p {
         width: 100%;
       }
-      .info{
+      .info {
         width: 100%;
         margin: 5% 0 0 0;
-        .edu{
+        .edu {
           width: 100%;
         }
-        .license{
+        .license {
           width: 100%;
           margin: 5% 0 0 0;
         }
       }
-      .ability{
+      .ability {
         flex-wrap: wrap;
-        .box{
-          width: 45%;
-          margin: 5% 0;
+        .box {
+          width: 48%;
+          margin: 2% 0;
         }
       }
     }
   }
-  .sec3{
-    .port1{
-      .contain{
+  .sec3 {
+    .port1 {
+      margin: 5vh 0;
+      .contain {
         height: auto;
         display: flex;
         flex-direction: column-reverse;
       }
-      .page_contain{
-        width: auto;
+      .page_contain {
         margin-top: 10px;
-        .pages{
+        .pages {
           height: auto;
-          position: relative;
-          display: none;
-          &.active{
-            display: block;
-          }
-          figure{
+          overflow: hidden;
+          figure {
             width: 100%;
             height: auto;
-            img{
+            img {
               width: 100%;
               height: auto;
             }
           }
-          .page_desc{
-            h4{
-              width: 95%;
-              margin: 20px auto;
-            }
-            p{
-              width: 95%;
-              margin: 20px auto;
-            }
+        }
+      }
+      .page_selector {
+        .tooltip{
+          width: 42vw;
+        }
+        .page_icon{
+          width: 14vw;
+        }
+        h3{
+          bottom: auto;
+          top: 0;
+        }
+      }
+    }
+    .port2 {
+      margin: 5vh 0;
+      .contain {
+        flex-direction: column;
+      }
+      article {
+        flex-wrap: wrap;
+        margin: 2% 0;
+        img {
+          width: 15%;
+          margin: 3%;
+        }
+        .desc_contain {
+          width: 79%;
+          h4{
+            margin: 2%;
+            width: 96%;
           }
+          p{
+            margin: 2%;
+            width: 96%;
+          }
+        }
+        .btn_contain {
+          width: 100%;
+          position: static;
+          a{
+            width: 95%;
+            margin: 10px 2.5%;
+          }
+        }
+      }
+    }
+  }
+  .sec4 {
+    p {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .contect {
+      width: 90%;
+      li {
+        font-size: 24px;
+        &:last-of-type {
+          font-size: 14px;
+        }
+        .copy {
+          width: 24px;
+          height: 32px;
         }
       }
     }
   }
 }
 
-@media (max-width: 480px){
-  .sec1{
-    .back-img{
-      background-size: contain;
-    }
+/* width 480px (Mobile_S) */
+@media (max-width: 480px) {
+  .sec1 .back-img {
+    background-size: contain;
   }
-  .sec2{
-    .profile{
+  .sec2 {
+    .profile {
       flex-direction: column;
       justify-content: center;
-      figure{
+      figure {
         width: 100%;
         text-align: center;
       }
-      ul{
+      ul {
         width: 100%;
         margin-left: 0;
-        li:last-of-type{
+        li:last-of-type {
           margin-bottom: 0;
         }
       }
     }
-    .introduce{
-      .ability{
+    .introduce {
+      .ability {
         flex-direction: column;
         align-items: center;
-        .box{
+        .box {
           width: 90%;
         }
       }
     }
   }
-  .sec3{
-    .port1{
-      .page_contain{
-        .pages{
-          .page_desc{
-            h4{
+  .sec3 {
+    .port1 {
+      .page_contain {
+        .pages {
+          .page_desc {
+            h4 {
               font-size: 20px;
             }
-            p{
+            p {
               font-size: 16px;
+            }
+            .link {
+              a {
+                width: 95%;
+              }
             }
           }
         }
       }
-      .page_selector{
+      .page_selector {
         flex-wrap: wrap;
         justify-content: space-between;
-        .page_icon{
+        .tooltip{
+          width: 97%;
+        }
+        .page_icon {
           width: 30%;
         }
-        h3{
+        h3 {
           position: relative;
           margin-top: 10px;
           margin-left: auto;
           font-size: 24px;
+        }
+      }
+    }
+    .port2 {
+      article {
+        .desc_contain {
+          h4{
+            font-size: 20px;
+          }
+          p{
+            font-size: 16px;
+          }
+        }
+        .btn_contain a{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .sec4 {
+    .cube_animation {
+      $boxSize: 300px;
+    }
+    .contect {
+      li {
+        font-size: 20px;
+        .copy {
+          width: 20px;
+          height: 28px;
         }
       }
     }

@@ -1,3 +1,4 @@
+/* width 1024px (Tablet) */
 @media (max-width: 1024px) {
   .contain {
     height: 90%;
@@ -66,7 +67,7 @@
     font-size: 16px;
   }
   .sec3 .port1 .page_contain {
-    height: 70%;
+    height: 80%;
   }
   .sec3 .port1 .page_contain .pages {
     -webkit-box-orient: vertical;
@@ -85,11 +86,61 @@
   .sec3 .port1 .page_contain .pages .page_desc {
     width: 100%;
   }
-  .sec3 .port1 .page_selector {
+  .sec3 .port1 .page_contain .pages .page_desc h4 {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc p {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc .link {
+    width: 95%;
+    margin: 20px auto 0;
+  }
+  .sec3 .port1 .page_contain .pages .page_desc .link a {
+    width: 46.9%;
+    margin: 5px 1%;
+  }
+  .sec3 .port2 .contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec3 .port2 article {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 30%;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .sec3 .port2 article img {
+    width: 15%;
+    margin: 3%;
+  }
+  .sec3 .port2 article .desc_contain {
+    width: 50%;
+  }
+  .sec3 .port2 article .btn_contain {
+    width: 25%;
+    position: static;
+  }
+  .sec4 p {
+    font-size: 7vw;
+  }
+  .sec4 .contect {
+    width: 90%;
   }
 }
 
+/* width 768px (Mobile_L) */
 @media (max-width: 768px) {
   .contain {
     margin: 5% auto;
@@ -119,8 +170,11 @@
         flex-wrap: wrap;
   }
   .sec2 .introduce .ability .box {
-    width: 45%;
-    margin: 5% 0;
+    width: 48%;
+    margin: 2% 0;
+  }
+  .sec3 .port1 {
+    margin: 5vh 0;
   }
   .sec3 .port1 .contain {
     height: auto;
@@ -133,16 +187,11 @@
             flex-direction: column-reverse;
   }
   .sec3 .port1 .page_contain {
-    width: auto;
     margin-top: 10px;
   }
   .sec3 .port1 .page_contain .pages {
     height: auto;
-    position: relative;
-    display: none;
-  }
-  .sec3 .port1 .page_contain .pages.active {
-    display: block;
+    overflow: hidden;
   }
   .sec3 .port1 .page_contain .pages figure {
     width: 100%;
@@ -152,16 +201,73 @@
     width: 100%;
     height: auto;
   }
-  .sec3 .port1 .page_contain .pages .page_desc h4 {
-    width: 95%;
-    margin: 20px auto;
+  .sec3 .port1 .page_selector .tooltip {
+    width: 42vw;
   }
-  .sec3 .port1 .page_contain .pages .page_desc p {
+  .sec3 .port1 .page_selector .page_icon {
+    width: 14vw;
+  }
+  .sec3 .port1 .page_selector h3 {
+    bottom: auto;
+    top: 0;
+  }
+  .sec3 .port2 {
+    margin: 5vh 0;
+  }
+  .sec3 .port2 .contain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sec3 .port2 article {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 2% 0;
+  }
+  .sec3 .port2 article img {
+    width: 15%;
+    margin: 3%;
+  }
+  .sec3 .port2 article .desc_contain {
+    width: 79%;
+  }
+  .sec3 .port2 article .desc_contain h4 {
+    margin: 2%;
+    width: 96%;
+  }
+  .sec3 .port2 article .desc_contain p {
+    margin: 2%;
+    width: 96%;
+  }
+  .sec3 .port2 article .btn_contain {
+    width: 100%;
+    position: static;
+  }
+  .sec3 .port2 article .btn_contain a {
     width: 95%;
-    margin: 20px auto;
+    margin: 10px 2.5%;
+  }
+  .sec4 p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .sec4 .contect {
+    width: 90%;
+  }
+  .sec4 .contect li {
+    font-size: 24px;
+  }
+  .sec4 .contect li:last-of-type {
+    font-size: 14px;
+  }
+  .sec4 .contect li .copy {
+    width: 24px;
+    height: 32px;
   }
 }
 
+/* width 480px (Mobile_S) */
 @media (max-width: 480px) {
   .sec1 .back-img {
     background-size: contain;
@@ -204,12 +310,18 @@
   .sec3 .port1 .page_contain .pages .page_desc p {
     font-size: 16px;
   }
+  .sec3 .port1 .page_contain .pages .page_desc .link a {
+    width: 95%;
+  }
   .sec3 .port1 .page_selector {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .sec3 .port1 .page_selector .tooltip {
+    width: 97%;
   }
   .sec3 .port1 .page_selector .page_icon {
     width: 30%;
@@ -219,5 +331,21 @@
     margin-top: 10px;
     margin-left: auto;
     font-size: 24px;
+  }
+  .sec3 .port2 article .desc_contain h4 {
+    font-size: 20px;
+  }
+  .sec3 .port2 article .desc_contain p {
+    font-size: 16px;
+  }
+  .sec3 .port2 article .btn_contain a {
+    font-size: 16px;
+  }
+  .sec4 .contect li {
+    font-size: 20px;
+  }
+  .sec4 .contect li .copy {
+    width: 20px;
+    height: 28px;
   }
 }
