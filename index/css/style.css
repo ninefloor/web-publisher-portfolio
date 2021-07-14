@@ -378,11 +378,11 @@ body {
 }
 
 .sec2 .introduce .ability .box.markup .inner {
-  background-color: #f16529;
+  background-color: #B06204;
 }
 
 .sec2 .introduce .ability .box.markup:hover .inner {
-  background-color: #f48759;
+  background-color: #975403;
 }
 
 .sec2 .introduce .ability .box.markup .icon {
@@ -391,11 +391,11 @@ body {
 }
 
 .sec2 .introduce .ability .box.script .inner {
-  background-color: #be8438;
+  background-color: #916E03;
 }
 
 .sec2 .introduce .ability .box.script:hover .inner {
-  background-color: #cf9c5a;
+  background-color: #785b02;
 }
 
 .sec2 .introduce .ability .box.script .icon {
@@ -404,11 +404,11 @@ body {
 }
 
 .sec2 .introduce .ability .box.graphic .inner {
-  background-color: #003a68;
+  background-color: #042440;
 }
 
 .sec2 .introduce .ability .box.graphic:hover .inner {
-  background-color: #00569b;
+  background-color: #031728;
 }
 
 .sec2 .introduce .ability .box.graphic .icon {

@@ -215,13 +215,16 @@ body {
             left: 5%;
           }
         }
+        $html : #B06204;
+        $js : #916E03;
+        $adobe : #042440;
         &.markup {
           .inner {
-            background-color: #f16529;
+            background-color: $html;
           }
           &:hover {
             .inner {
-              background-color: lighten(#f16529, 10%);
+              background-color: darken($html, 5%);
             }
           }
           .icon {
@@ -231,11 +234,11 @@ body {
         }
         &.script {
           .inner {
-            background-color: #be8438;
+            background-color: $js;
           }
           &:hover {
             .inner {
-              background-color: lighten(#be8438, 10%);
+              background-color: darken($js, 5%);
             }
           }
           .icon {
@@ -245,11 +248,11 @@ body {
         }
         &.graphic {
           .inner {
-            background-color: #003a68;
+            background-color: $adobe;
           }
           &:hover {
             .inner {
-              background-color: lighten(#003a68, 10%);
+              background-color: darken($adobe, 5%);
             }
           }
           .icon {
