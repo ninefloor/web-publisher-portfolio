@@ -290,23 +290,15 @@
       }
     }
   }
-  .sec3-1 {
-    .page_contain {
-      .pages {
-        .page_desc {
-          h4 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 16px;
-          }
-          .link {
-            a {
-              width: 95%;
-            }
-          }
-        }
-      }
+  .sec3-1 .page_contain .pages .page_desc {
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .link a{
+      width: 95%;
     }
     .page_selector {
       flex-wrap: wrap;

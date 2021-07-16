@@ -307,20 +307,20 @@
   .sec3-1 .page_contain .pages .page_desc .link a {
     width: 95%;
   }
-  .sec3-1 .page_selector {
+  .sec3-1 .page_contain .pages .page_desc .page_selector {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .sec3-1 .page_selector .tooltip {
+  .sec3-1 .page_contain .pages .page_desc .page_selector .tooltip {
     width: 97%;
   }
-  .sec3-1 .page_selector .page_icon {
+  .sec3-1 .page_contain .pages .page_desc .page_selector .page_icon {
     width: 30%;
   }
-  .sec3-1 .page_selector h3 {
+  .sec3-1 .page_contain .pages .page_desc .page_selector h3 {
     position: relative;
     margin-top: 10px;
     margin-left: auto;
